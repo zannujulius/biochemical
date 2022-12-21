@@ -19,7 +19,7 @@ const About = () => {
             About Us.
           </div>
           <div
-            className="w-[100%] text-5xl text-center font-bold text-white leading-[60px]"
+            className="w-[100%] lg:w-[70%] mx-auto text-5xl text-center font-bold text-white leading-[60px]"
             style={{}}
           >
             Lorem Ipsum is simply dummy text of the printing and typesetting

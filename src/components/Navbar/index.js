@@ -34,7 +34,7 @@ const Navbar = () => {
             to="/"
             className="brand text-2xl font-normal mx-2 text-zinc-800"
           >
-            BioChemical
+            Greencrystal Engineering
           </Link>
         </div>
         <div className="flex flex-row items-center ">
