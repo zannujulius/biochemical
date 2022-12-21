@@ -1,0 +1,48 @@
+.team {
+  background: url("https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBlb3BsZSUyMHNtaWxpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-cover {
+  background: url("../../assets/images/23661.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.55;
+}
+
+.rule {
+  height: 2px;
+  color: #f2f4fd;
+}
+
+.approach {
+  background: url("https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBlb3BsZSUyMHNtaWxpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.project:nth-child(1) {
+  background: url("https://media.istockphoto.com/id/1182436133/photo/young-scientist-working-in-the-laboratory.jpg?b=1&s=170667a&w=0&k=20&c=0cWjWFGY5wRan-SAD7oQ6kbdZkEPvlevD-lcpx-JL_w=");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.project:nth-child(2) {
+  background: url("https://images.unsplash.com/photo-1655993810480-c15dccf9b3a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmlvY2hlbWlzdHJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.breaker {
+  background: linear-gradient(#080b222b, #282e5e2d),
+    url("../../assets/images/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
