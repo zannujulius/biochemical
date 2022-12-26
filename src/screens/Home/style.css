@@ -7,7 +7,7 @@
 
 .hero-cover {
   background: linear-gradient(#0000001c, #0000005a),
-    url("https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGVuZ2luZWVyaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+    url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG9mZmljZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -26,24 +26,33 @@
   background-size: cover;
 }
 
-.project:nth-child(1) {
-  background: url("https://media.istockphoto.com/id/1182436133/photo/young-scientist-working-in-the-laboratory.jpg?b=1&s=170667a&w=0&k=20&c=0cWjWFGY5wRan-SAD7oQ6kbdZkEPvlevD-lcpx-JL_w=");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.project:nth-child(2) {
-  background: url("https://images.unsplash.com/photo-1655993810480-c15dccf9b3a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmlvY2hlbWlzdHJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .breaker {
   background: linear-gradient(#080b222b, #282e5e2d),
     url("../../assets/images/banner.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.process {
+  background: url("../../assets/images/greybg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.process-card {
+  background: linear-gradient(#0000005f, #00000093),
+    url("https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.project-cover {
+  transition: all 150ms ease;
+}
+
+.project-cover:hover {
+  background: #ececec;
 }

@@ -19,26 +19,26 @@ const Navbar = () => {
     return () => {};
   }, []);
   return (
+    // <div
+    //   className={
+    //     showNav || location.pathname == "/about"
+    //       ? "w-full px-3 py-4 fixed navbar z-50 bg-white drop-shadow-md"
+    //       : `w-full px-3 py-4 fixed navbar z-50`
+    //   }
+    // >
     <div
-      className={
-        showNav || location.pathname == "/about"
-          ? "w-full px-3 py-4 fixed navbar z-50 bg-white drop-shadow-md"
-          : `w-full px-3 py-4 fixed navbar z-50`
-      }
+      className={"w-full px-3 py-6 fixed navbar z-50 bg-white drop-shadow-md"}
     >
       {modal && <Modal closeModal={setmodal} />}
-      <div className="w-[95%] mx-auto pt-3 flex flex-row items-center justify-between">
-        <div className="flex flex-row items-center justify-start">
-          <div className="w-[40px] h-[40px] rounded-full overflow-hidden flex items-center justify-center">
+      <div className="w-[95%] mx-auto flex flex-row items-center justify-between">
+        <Link to="/" className="flex flex-row items-center justify-start">
+          <div className="w-[30px] h-[30px] rounded-full overflow-hidden flex items-center justify-center">
             <img src={Logo} alt={"image"} className="" />
           </div>
-          <Link
-            to="/"
-            className="brand text-2xl font-normal mx-2 text-zinc-100"
-          >
+          <div className="brand text-1xl font-normal mx-2 text-zinc-700">
             Greencrystal Eng.
-          </Link>
-        </div>
+          </div>
+        </Link>
         <div className="flex flex-row items-center ">
           <div className="hidden md:flex items-center">
             <Link
@@ -49,9 +49,9 @@ const Navbar = () => {
             </Link>
             <Link
               className="cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:text-primary transition-all p-2"
-              to="/solutions"
+              to="/services"
             >
-              Solutions
+              Services
             </Link>
             <Link
               className="cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:text-primary transition-all p-2"

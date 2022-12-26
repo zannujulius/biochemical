@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="">
               <div className=""></div>
               <div className="font-bold text-zinc-800 text-3xl">
-                BioChemicals
+                Greencrystal Engineering.
               </div>
             </div>
             <div className="font-light text-zinc-700 text-md pt-3">
