@@ -16,21 +16,21 @@ const Home = () => {
 
   return (
     <Layout>
-      <div className="h-[80vh] w-screen flex flex-row items-center justify-between relative">
-        <div className="hero-cover h-full absolute bg-teal-800 w-full"></div>
-        <div className="grid w-full absolute grid-cols-1 gap-6 md:grid-cols-2 items-center justify-between px-4 lg:px-10 pt-12">
-          <div className="px-2 pt-[450px] lg:pt-[40px]">
+      <div className="h-[80vh] w-screen flex flex-row items-center justify-between relative hero-cover">
+        {/* <div className="hero-cover h-full absolute bg-teal-800 w-full"></div> */}
+        <div className="w-full flex flex-row items-center justify-between px-4 pt-12">
+          <div className="w-[100%] lg:w-[60%] mx-auto">
             <div
-              className="w-[100%] text-5xl font-bold text-zinc-800 leading-[60px]"
+              className=" text-5xl pt-[450px] text-white lg:pt-[40px] text-center font-bold  leading-[60px]"
               style={{}}
             >
               Lorem Ipsum is simply dummy text of the printing and
             </div>
-            <div className="text-1xl pt-4 font-extralight text-zinc-800 w-[80%]">
+            <div className="text-2xl text-white text-center pt-4 font-extralight lg:w-[70%] mx-auto">
               Lorem Ipsum is simply been the industry'. been the industry'.
               Lorem Ipsum is simply been the industry
             </div>
-            <div className="grid grid-cols-2 md:w-[400px] mt-12">
+            <div className="flex flex-row w-full mt-12 items-center justify-center">
               <div className="">
                 <Button
                   text={"Learn more"}
@@ -47,13 +47,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="border-2 border-white w-full h-full">
-            <div className="w-[100%] h-[400px]"></div>
-          </div>
         </div>
       </div>
       {/* Parnter */}
-      <div className="flex flex-col items-center justify-center pb-10 ">
+      <div className="flex flex-col mt-16 items-center justify-center pb-10 ">
         <div className="text-xl text-primary">Our Partners.</div>
         <div className="text-center text-lg font-light text-zinc-800 pt-4 w-full md:w-[70%] mx-auto">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -107,7 +104,7 @@ const Home = () => {
         </div>
       </div>
       {/* section */}
-      <div className="w-[80%] mx-auto mt-32 mb-32 ">
+      <div className="w-[80%] mx-auto mt-16 mb-16 ">
         <div className="w-full flex flex-row items-center">
           <div className="lg:w-[150px] text-zinc-800">Our Approach.</div>
           <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
@@ -142,7 +139,7 @@ const Home = () => {
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the orem Ipsum has been Lorem Ipsum
               is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the orem Ipsum has been
+              Lorem Ipsum has been the orem Ipsum has been.
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-10">
@@ -174,7 +171,7 @@ const Home = () => {
       </div>
 
       {/* section */}
-      <div className="w-[80%] mx-auto mt-32 mb-32 ">
+      <div className="w-[80%] mx-auto mt-16 mb-16 ">
         <div className="w-full flex flex-row items-center">
           <div className="lg:w-[150px] text-zinc-800">Our Project.</div>
           <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
@@ -206,7 +203,7 @@ const Home = () => {
       </div>
 
       {/* Team */}
-      <div className="w-[80%] mx-auto mt-32 mb-32">
+      <div className="w-[80%] mx-auto mt-16 mb-16">
         <div className="w-full flex flex-row items-center">
           <div className="w-[150px] text-zinc-800">Our Team</div>
           <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>

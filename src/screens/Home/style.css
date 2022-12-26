@@ -6,11 +6,12 @@
 }
 
 .hero-cover {
-  background: url("../../assets/images/23661.png");
+  background: linear-gradient(#0000001c, #0000005a),
+    url("https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGVuZ2luZWVyaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  opacity: 0.55;
+  background-attachment: fixed;
 }
 
 .rule {

@@ -3,7 +3,7 @@ import "./style.css";
 import { AiOutlineMenu } from "react-icons/ai";
 import React, { useState, useEffect } from "react";
 import Modal from "../Modal";
-
+import Logo from "../../assets/images/logo.jpg";
 const Navbar = () => {
   let location = useLocation();
   const [showNav, setshowNav] = useState(false);
@@ -23,42 +23,44 @@ const Navbar = () => {
       className={
         showNav || location.pathname == "/about"
           ? "w-full px-3 py-4 fixed navbar z-50 bg-white drop-shadow-md"
-          : `w-full p-2 fixed navbar z-50`
+          : `w-full px-3 py-4 fixed navbar z-50`
       }
     >
       {modal && <Modal closeModal={setmodal} />}
       <div className="w-[95%] mx-auto pt-3 flex flex-row items-center justify-between">
         <div className="flex flex-row items-center justify-start">
-          <div className="w-[50px] hidden h-[50px] rounded-full drop-shadow-md border-2 border-white"></div>
+          <div className="w-[40px] h-[40px] rounded-full overflow-hidden flex items-center justify-center">
+            <img src={Logo} alt={"image"} className="" />
+          </div>
           <Link
             to="/"
-            className="brand text-2xl font-normal mx-2 text-zinc-800"
+            className="brand text-2xl font-normal mx-2 text-zinc-100"
           >
-            Greencrystal Engineering
+            Greencrystal Eng.
           </Link>
         </div>
         <div className="flex flex-row items-center ">
           <div className="hidden md:flex items-center">
             <Link
-              className="cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:border-b-2 hover:border-primary hover:text-primary transition-all p-2"
+              className="cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:text-primary transition-all p-2"
               to="/"
             >
               Home
             </Link>
             <Link
-              className="cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:border-b-2 hover:border-primary hover:text-primary transition-all p-2"
+              className="cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:text-primary transition-all p-2"
               to="/solutions"
             >
               Solutions
             </Link>
             <Link
-              className="cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:border-b-2 hover:border-primary hover:text-primary transition-all p-2"
+              className="cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:text-primary transition-all p-2"
               to="/about"
             >
               About
             </Link>
             <Link
-              className=" hidden cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:border-b-2 hover:border-primary hover:text-primary transition-all p-2"
+              className=" hidden cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:text-primary transition-all p-2"
               to="/"
             >
               Contact Us
