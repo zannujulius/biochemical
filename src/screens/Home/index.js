@@ -17,12 +17,12 @@ const Home = () => {
 
   return (
     <Layout>
-      <div className=" w-screen flex flex-row py-[50px]  items-center justify-between relative hero-cover">
+      <div className=" w-screen flex flex-row py-[90px]  items-center justify-between relative hero-cover">
         {/* <div className="hero-cover h-full absolute bg-teal-800 w-full"></div> */}
         <div className="w-full flex flex-row items-center justify-between px-4 pt-12">
           <div className="w-[100%] lg:w-[60%] mx-auto">
             <div
-              className=" text-5xl pt-[70px] lg:pt-[300px] text-white  text-center font-bold  leading-[60px] animate__animated animate__fadeInUp"
+              className=" text-5xl pt-[70px] lg:pt-[100px] text-white  text-center font-bold  leading-[60px] animate__animated animate__fadeInUp"
               style={{}}
             >
               Lorem Ipsum is simply dummy text of the printing and
@@ -141,7 +141,7 @@ const Home = () => {
       </div>
 
       {/* Aproach process */}
-      <div className="w-full process mb-16  p-8">
+      <div className="w-full process mb-16  p-8 overflow-hidden">
         <div className="lg:w-[90%] w-full mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
           <div className=" mx-auto lg:w-[80%]">
             {["Plan", "Design", "Build"].map((i, index) => (
