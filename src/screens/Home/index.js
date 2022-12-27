@@ -99,7 +99,7 @@ const Home = () => {
         </div>
         <div
           className="h-full p-4 flex flex-col items-start justify-center "
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="1000"
         >
           <div className="text-lg text-primary">Consulting</div>
@@ -179,7 +179,7 @@ const Home = () => {
             </div>
             <div
               className="mt-2 text-zinc-400 font-light"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="1000"
             >
               {" "}
