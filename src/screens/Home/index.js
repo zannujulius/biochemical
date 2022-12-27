@@ -155,11 +155,7 @@ const Home = () => {
           <div className=" mx-auto lg:w-[80%]">
             {["Plan", "Design", "Build"].map((i, index) => (
               <div className="w-full mt-10" key={index}>
-                <div
-                  className={` drop-shadow-sm rounded-lg p-4 bg-white`}
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                >
+                <div className={` drop-shadow-sm rounded-lg p-4 bg-white`}>
                   <div className="text-zinc-700 font-bold text-2xl">{i}</div>
                   <div className="flex flex-row align-items-center mt-6 justify-between">
                     <div className=" text-sm uppercase text-gray-400 font-light">
