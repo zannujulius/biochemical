@@ -5,15 +5,15 @@ import Button from "../../components/Button";
 import React, { useEffect } from "react";
 const About = () => {
   useEffect(() => {
-    window.scroll({
-      top: 0,
-      behavior: "smooth",
-    });
+    // window.scroll({
+    //   top: 0,
+    //   behavior: "smooth",
+    // });
     return () => {};
   }, []);
   return (
     <Layout>
-      <div className="w-[100vw] h-[90vh] bg-indigo-700 about-cover flex flex-row items-center justify-center">
+      <div className="w-[100vw] h-[90vh]  about-cover flex flex-row items-center justify-center">
         <div>
           <div className="text-white text-center font-bold text-lg">
             About Us.
@@ -36,7 +36,7 @@ const About = () => {
             className="bg-white drop-shadow-md h-[250px] rounded-sm p-5"
             key={i}
           >
-            <div className="h-[60px] w-[60px] ">
+            <div className="h-[50px] w-[50px] ">
               <img src={Research} alt="image" className="" />
             </div>
             <div className="pt-6 font-bold">Lorem Ipsum is simply dummy </div>
@@ -53,15 +53,13 @@ const About = () => {
           <div className="w-[150px] text-zinc-800">Our Journey.</div>
           <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
         </div>
-        <div className="w-full text-xl pt-3 font-bold text-zinc-800 grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="w-full text-xl pt-3 font-bold text-zinc-800 grid grid-cols-1 lg:grid-cols-2">
           <div className="">
             <div className="w-[200px] h-[200px] ceo-profile "></div>
             <div className="font-bold text-zinc-800 text-lg pt-2">
               Nate Clark
             </div>
-            <div className="font-light text-zinc-500 text-sm ">
-              Cheif Lab Scientist ( BioChemical)
-            </div>
+            <div className="font-light text-zinc-500 text-sm ">COO</div>
           </div>
           <div className="">
             <div className="font-bold text-lg">Lorem Ipsum is simply</div>
@@ -117,26 +115,57 @@ const About = () => {
       </div>
       <div className="w-[90%] lgw-[80%] mx-auto mt-32 mb-32 ">
         <div className="w-full flex flex-row items-center">
+          <div className="lg:w-[150px] text-zinc-800">Services .</div>
+          <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
+        </div>
+        <div className="lg:w-[500px] text-xl pt-3 font-bold text-zinc-800">
+          Some of the service we offer.
+        </div>
+        <div className="w-full grid grid-cols-2 lg:grid-rows-4 lg:grid-cols-3  h-[500px] pt-6">
+          <div className="row-span-2 area relative">
+            <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
+              Consulting
+            </div>
+          </div>
+          <div className="row-span-2 area relative">
+            <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
+              Project Development
+            </div>
+          </div>
+          <div className="row-span-2 area relative">
+            <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
+              Project Financing
+            </div>
+          </div>
+          <div className="row-span-2 area relative">
+            <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
+              Project Management
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-[90%] lgw-[80%] mx-auto mt-32 mb-16">
+        <div className="w-full flex flex-row items-center">
           <div className="lg:w-[150px] text-zinc-800">Our Sectors</div>
           <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
         </div>
         <div className="lg:w-[500px] text-xl pt-3 font-bold text-zinc-800">
           Some of the economic sector.
         </div>
-        <div className="w-full grid grid-cols-2 lg:grid-rows-3 lg:grid-cols-3  h-[500px] pt-6">
-          <div className="row-span-2 area relative">
-            <div className="absolute bottom-5 left-10 text-white font-bold text-lg ">
-              Agriculture
+        <div className="w-full grid grid-cols-2 lg:grid-rows-4 lg:grid-cols-3 h-[500px] ">
+          <div className="row-span-2 sector relative">
+            <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
+              Low Carbon Fuels
             </div>
           </div>
-          <div className="row-span-2 area relative">
-            <div className="absolute bottom-5 left-10 text-white font-bold text-lg ">
-              Medicine
+          <div className="row-span-2 sector relative">
+            <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
+              Solar and Wind
             </div>
           </div>
-          <div className="row-span-2 area relative">
-            <div className="absolute bottom-5 left-10 text-white font-bold text-lg ">
-              Research
+          <div className="row-span-2 sector relative">
+            <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
+              Food and Pharma
             </div>
           </div>
         </div>

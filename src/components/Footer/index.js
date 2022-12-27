@@ -8,11 +8,11 @@ const Footer = () => {
           <div className="">
             <div className="">
               <div className=""></div>
-              <div className="font-bold text-zinc-800 text-3xl">
+              <div className="font-bold text-zinc-800 text-2xl">
                 Greencrystal Engineering.
               </div>
             </div>
-            <div className="font-light text-zinc-700 text-md pt-3">
+            <div className="font-light text-zinc-700 text-sm pt-2">
               lore mips uemlo remip suemloremipsuemlor
             </div>
           </div>

@@ -7,30 +7,69 @@
 
 .area:nth-child(1) {
   background: linear-gradient(#00000000, #010c0780),
-    url("https://plus.unsplash.com/premium_photo-1661773333426-44eba9040a2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGFncmljdWx0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+    url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .area:nth-child(2) {
-  background: url("https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVkaWNpbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60");
+  background: linear-gradient(#00000000, #010c0798),
+    url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .area:nth-child(3) {
-  background: linear-gradient(#00000000, #00000021),
-    url("https://plus.unsplash.com/premium_photo-1661284886645-1e21653e252a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHJlc2VhcmNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+  background: linear-gradient(#00000000, #00000067),
+    url("https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+.area:nth-child(4) {
+  background: linear-gradient(#00000000, #00000065),
+    url("https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.area:nth-child(5) {
+  background: linear-gradient(#00000000, #00000077),
+    url("https://plus.unsplash.com/premium_photo-1661284886645-1e21653e252a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHJlc2VhcmNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .about-cover {
   background: linear-gradient(#0e143b7e, #282e5eb9),
     url("https://img.freepik.com/premium-photo/microscope-laboratory-with-test-tube-background-medical-healthcare-technology-pharmaceutical-research-development-concept_33413-309.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sector:nth-child(1) {
+  background: linear-gradient(#0e143b05, #0b0e228c),
+    url("https://www.greenqueen.com.hk/wp-content/uploads/2021/05/The-Best-Days-For-Fossil-Fuel-Companies-Are-Over-.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sector:nth-child(2) {
+  background: linear-gradient(#0e143b12, #282e5e11),
+    url("https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2058&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sector:nth-child(3) {
+  background: linear-gradient(#0e143b1d, #282e5e0d),
+    url("https://images.unsplash.com/photo-1607398027609-fbd1a06fb5d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBoYXJtYWNldXRpY2FsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

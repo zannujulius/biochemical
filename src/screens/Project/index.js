@@ -13,12 +13,17 @@ const Project = () => {
   return (
     <Layout>
       <div className=" w-full ">
-        <div className="text-center flex flex-row align-center justify-center  pt-32 py-32 project-details_cover w-full ">
-          <div className=" text-white font-bold text-2xl"> Project Name </div>
+        <div className="text-center flex flex-col align-center justify-center  pt-32 pb-16 project-details_cover w-full ">
+          <div className=" text-white font-bold text-2xl pt-10">
+            Project Name
+          </div>
+          <div className=" text-white text-md ">
+            loremMagna culpa qui exercitation
+          </div>
         </div>
       </div>
       <div className="lg:w-[80%] mx-auto w-full grid grid-cols-1 lg:grid-cols-3 my-16">
-        <div className="cols-span-1">
+        <div className="cols-span-1 p-4">
           <div className="">
             <div className="italic font-bold text-3xl text-zinc-800 ">
               loremMagna culpa qui exercitation
