@@ -5,10 +5,10 @@ import Button from "../../components/Button";
 import React, { useEffect } from "react";
 const About = () => {
   useEffect(() => {
-    // window.scroll({
-    //   top: 0,
-    //   behavior: "smooth",
-    // });
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
     return () => {};
   }, []);
   return (
@@ -91,7 +91,7 @@ const About = () => {
       <div className="solution-bg w-full my-20 p-8  z-[40] ">
         <div className="lg:w-[90%] h-full mx-auto flex flex-wrap flex-row items-center justify-between">
           <div className="">
-            <div className="text-3xl font-bold text-white  underline ">
+            <div className="text-2xl font-bold text-white  underline ">
               Need a solution ?
             </div>
             <div className="text-lg font-light text-white lg:w-[400px] pt-4">

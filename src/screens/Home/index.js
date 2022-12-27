@@ -32,7 +32,16 @@ const Home = () => {
               Lorem Ipsum is simply been the industry
             </div>
             <div className="flex flex-row w-full mt-12 items-center justify-center">
-              <div className="">
+              <div
+                className=""
+                onClick={() =>
+                  window.scroll({
+                    top: 300,
+                    left: 0,
+                    behavior: "smooth",
+                  })
+                }
+              >
                 <Button
                   text={"Learn more"}
                   bg={"bg-primary"}
