@@ -44,8 +44,8 @@
   background-size: cover;
 }
 .about-cover {
-  background: linear-gradient(#0e143b7e, #282e5eb9),
-    url("https://img.freepik.com/premium-photo/microscope-laboratory-with-test-tube-background-medical-healthcare-technology-pharmaceutical-research-development-concept_33413-309.jpg");
+  background: linear-gradient(#0a281942, #04180eb2),
+    url("https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b2ZmaWNlJTIwc3BhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

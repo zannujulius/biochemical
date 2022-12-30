@@ -20,10 +20,10 @@ const Solutions = () => {
   useEffect(() => {
     const options = {
       strings: [
-        "Engineering Services",
-        "Project Development",
-        "Project Management",
-        "Project Financing",
+        "Engineering Services.",
+        "Project Development.",
+        "Project Management.",
+        "Project Financing.",
       ],
       typeSpeed: 50,
       backSpeed: 50,
@@ -40,11 +40,8 @@ const Solutions = () => {
       <div className="w-[100vw] h-[90vh] flex flex-row items-center justify-center relative z-[40] position-relative services-cover">
         {/* <div className="hero-solution h-full w-full absolute top-20"></div> */}
         <div className="px-2 lg:w-[60%] flex flex-col items-center absolute justify-center pt-24">
-          <div className="text-white font-bold text-lg">Services</div>
-          <div
-            className="w-[100%] text-4xl text-center font-bold text-white leading-[60px]"
-            style={{}}
-          >
+          <div className="text-white font-bold text-md">Services</div>
+          <div className="w-[100%] text-4xl text-center font-bold text-white leading-[60px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
           </div>
           <div className="text-1xl pt-4 font-light lg:font-extralight text-center text-white w-[80%] mx-auto">
@@ -56,7 +53,7 @@ const Solutions = () => {
               className="mr-8"
               onClick={() =>
                 window.scroll({
-                  top: 300,
+                  top: 500,
                   left: 0,
                   behavior: "smooth",
                 })

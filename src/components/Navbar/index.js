@@ -35,7 +35,7 @@ const Navbar = () => {
           <div className="w-[30px] h-[30px] rounded-full overflow-hidden flex items-center justify-center">
             <img src={Logo} alt={"image"} className="" />
           </div>
-          <div className="brand text-1xl font-normal mx-2 text-zinc-700">
+          <div className="brand text-1xl font-bold mx-2 text-zinc-700">
             Greencrystal Eng.
           </div>
         </Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
           <div className="lg:hidden md:hidden" onClick={() => setmodal(true)}>
             <AiOutlineMenu size={30} color={""} />
           </div>
-          <div className="flex flex-row items-center hidden">
+          <div className="flex-row items-center hidden">
             <div className="text-zinc-800 font-extralight text-1xl px-1 cursor-pointer">
               EN
             </div>

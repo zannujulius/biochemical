@@ -36,7 +36,7 @@ const Home = () => {
                 className=""
                 onClick={() =>
                   window.scroll({
-                    top: 300,
+                    top: 500,
                     left: 0,
                     behavior: "smooth",
                   })

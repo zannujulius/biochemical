@@ -12,7 +12,7 @@ const Modal = ({ closeModal }) => {
           <div className="flex items-center">
             <Link
               to={"/"}
-              className="font-bold text-lg text-zinc-700 pt-1"
+              className="font-semibold text-lg text-zinc-700 pt-1"
               style={{
                 color: "",
               }}
