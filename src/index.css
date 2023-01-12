@@ -6,4 +6,14 @@ html,
 body {
   background: #ffffff;
   /* color: #66d79f; */
+  overflow-x: hidden;
+}
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
 }

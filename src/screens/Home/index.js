@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <div className=" w-screen flex flex-row py-[90px]  items-center justify-between relative hero-cover">
+      <div className=" w-screen flex flex-row py-[90px]  items-center justify-between relative  hero-cover">
         {/* <div className="hero-cover h-full absolute bg-teal-800 w-full"></div> */}
         <div className="w-full flex flex-row items-center justify-between px-4 pt-12">
           <div className="w-[100%] lg:w-[60%] mx-auto">
@@ -60,34 +60,7 @@ const Home = () => {
         </div>
       </div>
       {/* Parnter */}
-      <div className="flex flex-col mt-16 items-center justify-center pb-10 ">
-        <div className="text-xl text-primary">Our Partners.</div>
-        <div className="text-center text-lg font-light text-zinc-800 pt-4 w-full md:w-[70%] mx-auto">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum
-        </div>
-        <div className="pt-5 md:w-[80%] hidden lg:grid  grid-col-2 md:grid-cols-6">
-          {Array.from(Array(6)).map((_, i) => (
-            <div
-              key={i}
-              className="flex mx-4 w-300px flex-row items-center overflow-hidden "
-            >
-              <div className="w-[100px] hidden">
-                <img
-                  src={Brand}
-                  className="rounded-full"
-                  width={"100%"}
-                  alt={""}
-                />
-              </div>
 
-              <div className="italic text-4xl text-zinc-600 font-extrabold">
-                FIRMAN
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
       {/* section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 bg-white rounded-lg md:w-[80%] mx-auto gap-16 mt-8 lg:mt-12 p-3 ">
         <div className="" data-aos="fade-right" data-aos-duration="1000">
@@ -124,28 +97,32 @@ const Home = () => {
         </div>
       </div>
       {/* section */}
-      <div className="w-[80%] mx-auto mt-16 ">
-        <div className="w-full flex flex-row items-center">
-          <div className="lg:w-[150px] text-zinc-800">Our Approach.</div>
-          <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
-        </div>
-        <div className="lg:w-[500px] text-xl pt-3 font-bold text-zinc-800">
-          Lorem Ipsum is simply dummy text of the printi dummy text of the
-          printing and typesetting industry. Lorem
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 mt-16 gap-8">
-          {Array.from(Array(3)).map((_, i) => (
-            <div
-              className="h-[400px] border-[#f2f4fd] border-2 w-full rounded-lg"
-              key={i}
-            >
-              <div className="w-full h-[250px] approach"></div>
-              <div className="p-4 text-md font-light">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the orem Ipsum has been t
+
+      <div className="bg-black-gradient p-2">
+        <div className="w-[80%] mx-auto mt-16  ">
+          <div className="w-full flex flex-row items-center">
+            <div className="lg:w-[150px] text-white">Our Approach.</div>
+            <div className="h-[2px] rounded-lg w-full bg-white "></div>
+          </div>
+          <div className="lg:w-[500px] text-xl pt-3 font-bold text-white">
+            Lorem Ipsum is simply dummy text of the printi dummy text of the
+            printing and typesetting industry. Lorem
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 mt-16 gap-8">
+            {Array.from(Array(3)).map((_, i) => (
+              <div
+                className="h-[400px] border-[#f2f4fd] border-[1px] w-full rounded-lg"
+                key={i}
+              >
+                <div className="w-full h-[250px] approach"></div>
+                <div className="p-4 text-md font-light text-white">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the orem Ipsum has
+                  been t
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
 
@@ -260,7 +237,7 @@ const Home = () => {
           printing and typesetting industry. Lorem
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 mt-16 gap-8">
-          {Array.from(Array(3)).map((_, i) => (
+          {Array.from(Array(2)).map((_, i) => (
             <Link
               to={"/project/we"}
               className="h-[400px] project-cover border-[#ededed] border-2 w-full rounded-lg"
@@ -288,6 +265,32 @@ const Home = () => {
               </div>
             </Link>
           ))}
+               <Link
+              to={"/project/we"}
+              className="h-[400px] project-cover border-[#ededed] border-2 w-full rounded-lg"
+             
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div className="h-[250px] project overflow-hidden ">
+                <img
+                  src={
+                    "https://media.istockphoto.com/id/1445536716/photo/laboratory-technologists-with-test-tubes-during-a-biochemical-research.jpg?b=1&s=170667a&w=0&k=20&c=XIi8fR4fgV68M-YWcm63IaJveO6K0IWsw8NJP3nJMOQ="
+                  }
+                  className="w-full h-full transition-all ease-in duration-200 hover:scale-[1.2]"
+                />
+              </div>
+              <div className="p-4">
+                <div className="text-xl pt-3 font-bold text-zinc-800">
+                  Lorem ipsum
+                </div>
+                <div className="text-sm pt-2 font-light text-zinc-600">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the orem Ipsum has
+                  been.
+                </div>
+              </div>
+            </Link>
         </div>
       </div>
 

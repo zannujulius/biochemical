@@ -42,26 +42,26 @@ const Navbar = () => {
         <div className="flex flex-row items-center ">
           <div className="hidden md:flex items-center">
             <Link
-              className="cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:text-primary transition-all p-2"
+              className="cursor-pointer mr-16 text-[15px] font-semibold text-zinc-800 hover:text-primary transition-all p-2"
               to="/"
             >
               Home
             </Link>
             <Link
-              className="cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:text-primary transition-all p-2"
+              className="cursor-pointer mr-16 text-[15px] font-semibold text-zinc-800 hover:text-primary transition-all p-2"
               to="/services"
             >
               Services
             </Link>
             <Link
-              className="cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:text-primary transition-all p-2"
+              className="cursor-pointer mr-16 text-[15px] font-semibold text-zinc-800 hover:text-primary transition-all p-2"
               to="/about"
             >
               About
             </Link>
             <Link
-              className=" hidden cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:text-primary transition-all p-2"
-              to="/"
+              className="  cursor-pointer mr-16 text-[15px] font-semibold text-zinc-800 hover:text-primary transition-all p-2"
+              to="/contact"
             >
               Contact Us
             </Link>
