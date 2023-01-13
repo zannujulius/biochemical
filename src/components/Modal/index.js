@@ -24,7 +24,7 @@ const Modal = ({ closeModal }) => {
             <IoMdClose size={28} color={""} />
           </div>
         </div>
-        <div className="">
+        <div className=" ">
           <Link to="/" className="pr-5 block py-2 my-3">
             Home
           </Link>
@@ -34,8 +34,8 @@ const Modal = ({ closeModal }) => {
           <Link to="/about" className="pr-5 block py-2 my-3">
             About
           </Link>
-          <Link to="/" className="pr-5 hidden  py-2 my-3">
-            Support
+          <Link to="/contact" className="pr-5  py-2 my-3">
+            Contact us
           </Link>
         </div>
         <div></div>
