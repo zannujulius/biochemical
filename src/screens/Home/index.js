@@ -98,7 +98,7 @@ const Home = () => {
       </div>
       {/* section */}
 
-      <div className="bg-black-gradient p-2">
+      <div className="bg-black p-2">
         <div className="w-[80%] mx-auto mt-16  ">
           <div className="w-full flex flex-row items-center">
             <div className="lg:w-[150px] text-white">Our Approach.</div>
@@ -237,7 +237,7 @@ const Home = () => {
           printing and typesetting industry. Lorem
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 mt-16 gap-8">
-          {Array.from(Array(2)).map((_, i) => (
+          {Array.from(Array(3)).map((_, i) => (
             <Link
               to={"/project/we"}
               className="h-[400px] project-cover border-[#ededed] border-2 w-full rounded-lg"
@@ -265,32 +265,6 @@ const Home = () => {
               </div>
             </Link>
           ))}
-               <Link
-              to={"/project/we"}
-              className="h-[400px] project-cover border-[#ededed] border-2 w-full rounded-lg"
-             
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <div className="h-[250px] project overflow-hidden ">
-                <img
-                  src={
-                    "https://media.istockphoto.com/id/1445536716/photo/laboratory-technologists-with-test-tubes-during-a-biochemical-research.jpg?b=1&s=170667a&w=0&k=20&c=XIi8fR4fgV68M-YWcm63IaJveO6K0IWsw8NJP3nJMOQ="
-                  }
-                  className="w-full h-full transition-all ease-in duration-200 hover:scale-[1.2]"
-                />
-              </div>
-              <div className="p-4">
-                <div className="text-xl pt-3 font-bold text-zinc-800">
-                  Lorem ipsum
-                </div>
-                <div className="text-sm pt-2 font-light text-zinc-600">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the orem Ipsum has
-                  been.
-                </div>
-              </div>
-            </Link>
         </div>
       </div>
 

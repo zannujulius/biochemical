@@ -11,7 +11,7 @@ import Contact from "./screens/Contact";
 
 function App() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({ duration: 1000 });
   }, []);
   return (
     <Routes>

@@ -76,7 +76,7 @@ const Contact = () => {
               <label className="font-semi-bold pb-2  text-primary">Message</label>
               <textarea
                 placeholder="type your Message here"
-                className=" resize-none h-44 w-full p-2 outline-1 placeholder:text-[#eee] placeholder:text-sm mb-2 outline-primary rounded-lg"
+                className=" resize-none h-44 w-full p-2 outline-1 placeholder:text-[#eee] placeholder:text-sm mb-2 outline-none rounded-lg"
               ></textarea>
             </span>
             <Button text={"Send"} bg={"bg-white"} color={'text-primary'} width={"w-[90%] md:w-fit "}  />
