@@ -51,9 +51,10 @@ const Home = () => {
         dynamicHeight={true}
         autoPlay={true}
         infiniteLoop={true}
-        showIndicators={false}
+        showIndicators={true}
         showArrows={false}
-        swipeable={true}
+        swipeable={false}
+        transitionTime={2}
       >
         <div className="w-full lg:h-[70vh]" style={{}}>
           <div className="grid grid-col-1 lg:w-[90%] gap-4 mx-auto md:grid-cols-2 lg:gap-32 lg:grid-cols-2 px-4 pt-12 ">
