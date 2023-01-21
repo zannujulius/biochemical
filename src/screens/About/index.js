@@ -13,18 +13,18 @@ const About = () => {
   }, []);
   return (
     <Layout>
-      <div className="w-[100vw] h-[90vh]  about-cover flex flex-row items-center justify-center">
-        <div>
-          <div className="text-white text-center font-bold text-lg">
+      <div className="w-[100vw] h-[80vh]  flex flex-row items-center justify-center bg-gradient-to-r from-[#111214] to-[#072912]">
+        <div className="px-4 animate__animated animate__fadeInUp">
+          <div className="text-white md:text-center lg:text-center text-left font-bold text-lg ">
             About Us.
           </div>
           <div
-            className="w-[100%] lg:w-[70%] mx-auto text-5xl text-center font-bold text-white leading-[60px]"
+            className="w-[100%] lg:w-[70%] mx-auto text-5xl md:text-center lg:text-center text-left font-bold text-white leading-[60px]"
             style={{}}
           >
             Lorem Ipsum is simply dummy text of the printing and typesetting
           </div>
-          <div className="text-1xl pt-4 font-light lg:font-extralight text-center text-white w-[80%] mx-auto">
+          <div className="text-1xl pt-4 font-light lg:font-extralight md:text-center lg:text-center text-left text-white ">
             Lorem Ipsum is simply been the industry'. been the industry'. Lorem
             Ipsum is simply been the industry
           </div>
@@ -33,14 +33,16 @@ const About = () => {
       <div className="w-[90%] lg:w-[80%] mx-auto grid gap-10 grid-cols-1 lg:grid-cols-3 relative top-[-80px]">
         {Array.from(Array(3)).map((_, i) => (
           <div
-            className="bg-white drop-shadow-md h-[250px] rounded-sm p-5"
+            className="bg-white drop-shadow-md lg:[250px] rounded-sm p-5 "
             key={i}
+            data-aos="fade-up"
+            data-aos-duration="800"
           >
             <div className="h-[50px] w-[50px] ">
               <img src={Research} alt="image" className="" />
             </div>
             <div className="pt-6 font-bold">Lorem Ipsum is simply dummy </div>
-            <div className="text-sm text-zinc-800 font-light pt-1">
+            <div className="text-MD text-zinc-800 font-normal pt-1">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when
@@ -63,7 +65,7 @@ const About = () => {
           </div>
           <div className="">
             <div className="font-bold text-lg">Lorem Ipsum is simply</div>
-            <div className="font-extralight text-md text-zinc-700 pt-3 italic">
+            <div className="font-normal text-md text-zinc-700 pt-3 italic">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -165,7 +167,7 @@ const About = () => {
           </div>
           <div className="row-span-2 sector relative">
             <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
-              Food and Pharma
+              Food and Pharmaceuticals
             </div>
           </div>
         </div>

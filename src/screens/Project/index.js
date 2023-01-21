@@ -25,7 +25,7 @@ const Project = () => {
       <div className="lg:w-[80%] mx-auto w-full grid grid-cols-1 lg:grid-cols-3 my-16">
         <div className="cols-span-1 p-4">
           <div className="">
-            <div className="italic font-bold text-3xl text-zinc-800 ">
+            <div className="italic font-bold text-2xl text-zinc-800 ">
               loremMagna culpa qui exercitation
             </div>
             <div className="font-light text-zinc-500 mt-4 mb-4">

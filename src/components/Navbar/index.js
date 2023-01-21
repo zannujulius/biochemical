@@ -35,26 +35,26 @@ const Navbar = () => {
           <div className="w-[30px] h-[30px] rounded-full overflow-hidden flex items-center justify-center">
             <img src={Logo} alt={"image"} className="" />
           </div>
-          <div className="brand text-1xl font-bold mx-2 text-zinc-700">
-            Greencrystal Eng.
+          <div className="brand text-[17px] font-bold mx-2 text-zinc-700">
+            Greencrystal Engineering.
           </div>
         </Link>
         <div className="flex flex-row items-center ">
           <div className="hidden md:flex items-center">
             <Link
-              className="cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:text-primary transition-all p-2"
+              className="cursor-pointer mr-16 text-[15px] font-normal text-zinc-800 hover:text-primary transition-all p-2"
               to="/"
             >
               Home
             </Link>
             <Link
-              className="cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:text-primary transition-all p-2"
+              className="cursor-pointer mr-16 text-[15px] font-normal text-zinc-800 hover:text-primary transition-all p-2"
               to="/services"
             >
               Services
             </Link>
             <Link
-              className="cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:text-primary transition-all p-2"
+              className="cursor-pointer mr-16 text-[15px] font-normal text-zinc-800 hover:text-primary transition-all p-2"
               to="/about"
             >
               About

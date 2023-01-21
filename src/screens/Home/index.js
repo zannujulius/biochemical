@@ -5,33 +5,171 @@ import { BsArrowRightShort } from "react-icons/bs";
 import Brand from "../../assets/images/brand.jpg";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import moment from "moment";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
+import { Carousel } from "react-responsive-carousel";
+import { sectorsData } from "./data";
 
 const Home = () => {
-  useEffect(() => {
-    window.scroll({
-      top: 0,
-      behavior: "smooth",
-    });
-    return () => {};
-  }, []);
+  // useEffect(() => {
+  //   window.scroll({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  //   return () => {};
+  // }, []);
+
+  const DropDown = () => {
+    return Array.from(Array(3)).map((item, index) => (
+      <AccordionItem key={index}>
+        <AccordionItemHeading>
+          <AccordionItemButton>
+            {" "}
+            Where is the line between art and not art?
+          </AccordionItemButton>
+        </AccordionItemHeading>
+        <AccordionItemPanel>
+          Id aute tempor ad sunt et exercitation nulla duis dolore irure elit
+          consectetur laborum reprehenderit veniam nostrud in duis ut duis
+          ullamco dolore do adipisicing sed proident nostrud aute ut ea
+          cupidatat exercitation sit elit
+        </AccordionItemPanel>
+      </AccordionItem>
+    ));
+  };
+
+  const Slider = () => {
+    return (
+      <Carousel
+        showThumbs={false}
+        dynamicHeight={true}
+        autoPlay={true}
+        infiniteLoop={true}
+        showIndicators={false}
+        showArrows={false}
+        swipeable={true}
+      >
+        <div className="w-full lg:h-[70vh]" style={{}}>
+          <div className="grid grid-col-1 lg:w-[90%] gap-4 mx-auto md:grid-cols-2 lg:gap-32 lg:grid-cols-2 px-4 pt-12 ">
+            <div className="">
+              <div
+                className="text-5xl pt-[60px] lg:pt-[70px] text-white text-left font-bold leading-[60px] "
+                style={{}}
+              >
+                Lorem Ipsum is simply dummy text of the printing and
+              </div>
+              <div className="text-2xl text-white text-left pt-4 font-extralight ">
+                Lorem Ipsum is simply been the industry'. been the industry'.
+                Lorem Ipsum is simply been the industry
+              </div>
+              <div className="flex flex-row w-full mt-12 items-center ">
+                <div
+                  className=""
+                  onClick={() =>
+                    window.scroll({
+                      top: 500,
+                      left: 0,
+                      behavior: "smooth",
+                    })
+                  }
+                >
+                  <Button
+                    text={"Learn more"}
+                    bg={"bg-primary"}
+                    color={"text-white"}
+                  />
+                </div>
+                <div className="ml-8 hidden">
+                  <Button
+                    text={"Learn more"}
+                    color={"text-zinc-800"}
+                    border={"border-sky-800"}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="h-[400px] bg-white rounded-md shadow-sm sm:mt-[20px] lg:mt-[40px]"></div>
+          </div>
+        </div>
+        <div className="w-full lg:h-[70vh]" style={{}}>
+          <div className="grid grid-col-1 lg:w-[90%] gap-4 mx-auto md:grid-cols-2 lg:gap-32 lg:grid-cols-2 px-4 pt-12 ">
+            <div className="">
+              <div
+                className="text-5xl pt-[60px] lg:pt-[70px] text-white text-left font-bold leading-[60px] "
+                style={{}}
+              >
+                Another content is simply dummy text of the printing and
+              </div>
+              <div className="text-2xl text-white text-left pt-4 font-extralight ">
+                Lorem Ipsum is simply been the industry'. been the industry'.
+                Lorem Ipsum is simply been the industry
+              </div>
+              <div className="flex flex-row w-full mt-12 items-center ">
+                <div
+                  className=""
+                  onClick={() =>
+                    window.scroll({
+                      top: 500,
+                      left: 0,
+                      behavior: "smooth",
+                    })
+                  }
+                >
+                  <Button
+                    text={"Learn more"}
+                    bg={"bg-primary"}
+                    color={"text-white"}
+                  />
+                </div>
+                <div className="ml-8 hidden">
+                  <Button
+                    text={"Learn more"}
+                    color={"text-zinc-800"}
+                    border={"border-sky-800"}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="h-[400px] bg-white rounded-md shadow-sm sm:mt-[20px] lg:mt-[40px]"></div>
+          </div>
+        </div>
+        {/* <div>
+          <img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aW5kdXN0cnl8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" />
+          <p className="legend">Legend 2</p>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1582489853490-cd3a53eb4530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGluZHVzdHJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" />
+          <p className="legend">Legend 3</p>
+        </div> */}
+      </Carousel>
+    );
+  };
 
   return (
     <Layout>
-      <div className=" w-screen flex flex-row py-[90px]  items-center justify-between relative hero-cover">
-        {/* <div className="hero-cover h-full absolute bg-teal-800 w-full"></div> */}
-        <div className="w-full flex flex-row items-center justify-between px-4 pt-12">
-          <div className="w-[100%] lg:w-[60%] mx-auto">
+      <div className="w-screen flex flex-row pt-[90px] items-center justify-between relative">
+        <div className="w-full bg-gradient-to-r from-[#111214] to-[#072912] pb-10">
+          <Slider />
+        </div>
+        <div className="grid-col-1 lg:w-[90%] gap-4 mx-auto md:grid-cols-2 lg:gap-16 lg:grid-cols-2 px-4 pt-12 border border-teal-12 hidden">
+          <div className="">
             <div
-              className=" text-5xl pt-[70px] lg:pt-[100px] text-white  text-center font-bold  leading-[60px] animate__animated animate__fadeInUp"
+              className="text-5xl pt-[70px] lg:pt-[70px] text-white text-left font-bold leading-[60px]"
               style={{}}
             >
               Lorem Ipsum is simply dummy text of the printing and
             </div>
-            <div className="text-2xl text-white text-center pt-4 font-extralight lg:w-[70%] mx-auto animate__animated animate__fadeInUp">
+            <div className="text-2xl text-white text-left pt-4 font-extralight ">
               Lorem Ipsum is simply been the industry'. been the industry'.
               Lorem Ipsum is simply been the industry
             </div>
-            <div className="flex flex-row w-full mt-12 items-center justify-center">
+            <div className="flex flex-row w-full mt-12 items-center ">
               <div
                 className=""
                 onClick={() =>
@@ -57,57 +195,23 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <div className="h-[400px] bg-white rounded-md shadow-sm"></div>
         </div>
       </div>
-      {/* Parnter */}
-      <div className="flex flex-col mt-16 items-center justify-center pb-10 ">
-        <div className="text-xl text-primary">Our Partners.</div>
-        <div className="text-center text-lg font-light text-zinc-800 pt-4 w-full md:w-[70%] mx-auto">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum
-        </div>
-        <div className="pt-5 md:w-[80%] hidden lg:grid  grid-col-2 md:grid-cols-6">
-          {Array.from(Array(6)).map((_, i) => (
-            <div
-              key={i}
-              className="flex mx-4 w-300px flex-row items-center overflow-hidden "
-            >
-              <div className="w-[100px] hidden">
-                <img
-                  src={Brand}
-                  className="rounded-full"
-                  width={"100%"}
-                  alt={""}
-                />
-              </div>
 
-              <div className="italic text-4xl text-zinc-600 font-extrabold">
-                FIRMAN
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
       {/* section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 bg-white rounded-lg md:w-[80%] mx-auto gap-16 mt-8 lg:mt-12 p-3 ">
-        <div className="" data-aos="fade-right" data-aos-duration="1000">
-          <div className="h-[70px]"></div>
-          <img
-            src="https://img.freepik.com/free-photo/workplace-results-professional-report-accounting-during_1418-61.jpg?w=2000"
-            alt=""
-          />
-        </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 bg-white rounded-lg md:w-[80%] mx-auto lg:gap-32 mt-8 lg:mt-12 p-3 ">
         <div
           className="h-full p-4 flex flex-col items-start justify-center "
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="800"
         >
           <div className="text-lg text-primary">Consulting</div>
           <div className="text-4xl font-bold text-zinc-800 leading-[40px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem
           </div>
-          <div className="text-1xl pt-4 font-extralight text-zinc-800 md:w-[90%] py-3  leading-8 ">
+          <div className="text-1xl pt-4 font-normal text-zinc-800 md:w-[90%] py-3  leading-8 ">
             {/* <span className="text-[50px] font-bold italic">“</span> */}
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -116,97 +220,51 @@ const Home = () => {
             industry's standard dummy text ever since the 1500s.
           </div>
           <div className="w-[170px] flex flex-row p-3 rounded-md bg-primary items-center justify-center">
-            <div className="text-sm font-light text-white">Our services</div>
+            <a
+              href="/services#services"
+              className="text-sm font-light text-white d-block"
+            >
+              Our services
+            </a>
             <div className="flex flex-row bg-primary items-center justify-center ml-4">
               <BsArrowRightShort color="#fff" size={25} />
             </div>
           </div>
         </div>
-      </div>
-      {/* section */}
-      <div className="w-[80%] mx-auto mt-16 ">
-        <div className="w-full flex flex-row items-center">
-          <div className="lg:w-[150px] text-zinc-800">Our Approach.</div>
-          <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
-        </div>
-        <div className="lg:w-[500px] text-xl pt-3 font-bold text-zinc-800">
-          Lorem Ipsum is simply dummy text of the printi dummy text of the
-          printing and typesetting industry. Lorem
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 mt-16 gap-8">
-          {Array.from(Array(3)).map((_, i) => (
-            <div
-              className="h-[400px] border-[#f2f4fd] border-2 w-full rounded-lg"
-              key={i}
-            >
-              <div className="w-full h-[250px] approach"></div>
-              <div className="p-4 text-md font-light">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the orem Ipsum has been t
-              </div>
-            </div>
-          ))}
+        <div className="h-[600px]  border-4 border-zinc-200 shadow-sm rounded-lg bg-white overflow-hidden">
+          <img
+            src={
+              "https://images.unsplash.com/photo-1580411402629-e0cdf76f3d3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2912&q=80"
+            }
+            alt={""}
+            className="w-full h-full object-center"
+          />
         </div>
       </div>
 
-      {/* Aproach process */}
-      <div className="w-full process mb-16  p-8 overflow-hidden">
-        <div className="lg:w-[90%] w-full mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
-          <div className=" mx-auto lg:w-[80%]">
-            {["Plan", "Design", "Build"].map((i, index) => (
-              <div className="w-full mt-10" key={index}>
-                <div className={` drop-shadow-sm rounded-lg p-4 bg-white`}>
-                  <div className="text-zinc-700 font-bold text-2xl">{i}</div>
-                  <div className="flex flex-row align-items-center mt-6 justify-between">
-                    <div className=" text-sm uppercase text-gray-400 font-light">
-                      step 01
-                    </div>
-                    <div className="text-sm uppercase text-gray-400 text-end font-light">
-                      Lorem Ipsum is simply dummy text
-                    </div>
-                  </div>
-                </div>
+      {/* badges */}
+      <div className="grid my-8 grid-cols-1 lg:grid-cols-4 bg-white rounded-lg md:w-[80%] mx-auto gap-8 mt-8 lg:mt-12 p-3">
+        {sectorsData.map((i) => (
+          <div
+            className="lg:h-[250px] bg-gray-100 my-6 p-4 flex align-center justify-center flex-col"
+            key={i.id}
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <div className="flex align-center justify-center mt-[-50px]">
+              <div className="bg-primary w-[80px] h-[80px] pt-6 flex align-center justify-center rounded-full">
+                <div className="h-[30px]">{i.icon}</div>
               </div>
-            ))}
-          </div>
-          <div className="w-full">
-            <div
-              className="text-3xl font-bold text-zinc-700"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-            >
-              Get to know <br /> how we work
             </div>
-            <div
-              className="mt-2 text-zinc-400 font-light"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              {" "}
-              Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </div>
-            <div
-              className="rounded-lg drop-shadow-sm p-4 lg:w-[60%] mt-16 relative bg-white h-[250px] process-card"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-            >
-              <div className="text-white text-bold text-2xl">
-                Satisfied clients
-              </div>
-              <div className="text-white text-extrabold text-5xl mt-4">80%</div>
-              <div className="text-white text-bold text-md mt-4 ">
-                More than 1,702 users are Satisfied with our financial services
-              </div>
-              <div className="absolute bottom-3 right-6">
-                <Button text={"Learn more"} height={"33px"} />
-              </div>
+            <div className="pt-4">
+              <div className="font-bold text-center uppercase">{i.title}</div>
+              <div className="pt-2 text-center">{i.content}</div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
 
-      <div className="breaker lg:p-8 p-4 w-full flex flex-col items-center justify-center">
+      <div className="breaker hidden lg:p-8 p-4 w-full  flex-col items-center justify-center">
         <div className="lg:w-[90%] mx-auto">
           <div>
             <div className="text-white text-sm ">Lorem Ipsum is simply</div>
@@ -226,7 +284,7 @@ const Home = () => {
                 className="bg-white drop-shadow-lg my-1 lg:my-0 p-4 rounded-lg"
                 key={i}
                 data-aos="fade-up"
-                data-aos-duration="1000"
+                data-aos-duration="800"
               >
                 <div className="flex flex-row items-center">
                   <div className="h-[40px] border-2 border-zinc-300 w-[40px] bg-white ceo-profile rounded-full"></div>
@@ -252,23 +310,23 @@ const Home = () => {
       {/* section */}
       <div className="w-[80%] mx-auto mt-16 mb-16 ">
         <div className="w-full flex flex-row items-center">
-          <div className="lg:w-[150px] text-zinc-800">Our Project.</div>
+          <div className="lg:w-[150px] text-zinc-800">Our Business.</div>
           <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
         </div>
         <div className="lg:w-[500px] text-xl pt-3 font-bold text-zinc-800">
           Lorem Ipsum is simply dummy text of the printi dummy text of the
           printing and typesetting industry. Lorem
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 mt-16 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 gap-12">
           {Array.from(Array(3)).map((_, i) => (
             <Link
               to={"/project/we"}
-              className="h-[400px] project-cover border-[#ededed] border-2 w-full rounded-lg"
+              className="h-[auto] md:h-[250px] lg:h-[250px] project-cover w-full shadow-md border-b-4 border-primary"
               key={i}
-              data-aos="fade-up"
-              data-aos-duration="1000"
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
             >
-              <div className="h-[250px] project overflow-hidden ">
+              <div className="h-[250px] project overflow-hidden hidden ">
                 <img
                   src={
                     "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29uc3RydWN0aW9uJTIwc2l0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
@@ -277,10 +335,15 @@ const Home = () => {
                 />
               </div>
               <div className="p-4">
-                <div className="text-xl pt-3 font-bold text-zinc-800">
-                  Lorem ipsum
+                <div className="w-full">
+                  <div className="text-right font-light pb-2">
+                    {moment(Date()).format("ll")}
+                  </div>
                 </div>
-                <div className="text-sm pt-2 font-light text-zinc-600">
+                <div className="text-xl font-bold underline ">
+                  Lorem ipsum Lorem Ipsum is simp
+                </div>
+                <div className="text-md pt-2 font-normal text-zinc-600">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the orem Ipsum has
                   been.
@@ -292,7 +355,7 @@ const Home = () => {
       </div>
 
       {/* Team */}
-      <div className="w-[80%] mx-auto mt-16 mb-16">
+      <div className="w-[80%] mx-auto mt-16 mb-16 hidden">
         <div className="w-full flex flex-row items-center">
           <div className="w-[150px] text-zinc-800">Our Team</div>
           <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>

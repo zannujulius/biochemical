@@ -6,7 +6,7 @@
 }
 
 .hero-cover {
-  background: linear-gradient(#113d26a4, #09341dc6),
+  background: linear-gradient(#02050381, #020f08a0),
     url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG9mZmljZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60");
   background-repeat: no-repeat;
   background-position: center;
@@ -54,5 +54,5 @@
 }
 
 .project-cover:hover {
-  background: #ececec;
+  /* background: #ececec; */
 }

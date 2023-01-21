@@ -6,7 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import "aos/dist/aos.css";
 import { BrowserRouter } from "react-router-dom";
 import "animate.css";
-
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-accessible-accordion/dist/fancy-example.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
