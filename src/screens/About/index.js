@@ -13,13 +13,13 @@ const About = () => {
   }, []);
   return (
     <Layout>
-      <div className="w-[100vw] h-[80vh]  flex flex-row items-center justify-center bg-gradient-to-r from-[#111214] to-[#072912]">
+      <div className="w-[100vw] h-[100vh] lg:h-[80vh] pt-16 lg:pt-0 md:pt-0 flex flex-row items-center justify-center bg-gradient-to-r from-[#111214] to-[#072912]">
         <div className="px-4 animate__animated animate__fadeInUp">
           <div className="text-white md:text-center lg:text-center text-left font-bold text-lg ">
             About Us.
           </div>
           <div
-            className="text-3xl first-letter:text-3xl pt-4 lg:w-[70%] mx-auto text-white text-center font-bold leading-[60px] "
+            className="text-3xl first-letter:text-3xl pt-4 lg:w-[70%] lg:text-center md:text-center mx-auto text-white text-left font-bold leading-[60px] "
             style={{}}
           >
             Some call it Circular Economy, while others see it as the{" "}
@@ -47,13 +47,11 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-[90%] lg:w-[80%] mx-auto grid gap-10 grid-cols-1 lg:grid-cols-3 relative top-[-80px]">
+      <div className="w-[90%] lg:w-[80%] mx-auto grid gap-10 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 lg:mt-[-30px] md:mt-[-30px]">
         {Array.from(Array(3)).map((_, i) => (
           <div
             className="bg-white drop-shadow-md lg:[250px] rounded-sm p-5 "
             key={i}
-            data-aos="fade-up"
-            data-aos-duration="800"
           >
             <div className="h-[50px] w-[50px] ">
               <img src={Research} alt="image" className="" />
