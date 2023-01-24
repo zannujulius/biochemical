@@ -33,3 +33,30 @@ export const sectorsData = [
       "1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   },
 ];
+
+export const consultData = [
+  {
+    id: 1,
+    content: "Biomass Supply Chain Development and  Feedstock Analysis",
+  },
+  {
+    id: 2,
+    content: "Technology Assessment and Technology Readiness Level (TRL)",
+  },
+  {
+    id: 3,
+    content: "Commercial Readiness level",
+  },
+  {
+    id: 4,
+    content: "Plant Engineering and Design",
+  },
+  {
+    id: 5,
+    content: "Process Simulation",
+  },
+  {
+    id: 6,
+    content: " Project Planning",
+  },
+];

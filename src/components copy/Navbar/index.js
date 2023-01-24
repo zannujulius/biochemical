@@ -35,8 +35,8 @@ const Navbar = () => {
           <div className="w-[30px] h-[30px] rounded-full overflow-hidden flex items-center justify-center">
             <img src={Logo} alt={"image"} className="" />
           </div>
-          <div className="brand text-[17px] font-bold mx-2 text-zinc-800">
-            Greencrystal Engineering
+          <div className="brand text-[17px] font-bold mx-2 text-zinc-700">
+            Greencrystal Engineering.
           </div>
         </Link>
         <div className="flex flex-row items-center ">

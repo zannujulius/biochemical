@@ -14,7 +14,8 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import { Carousel } from "react-responsive-carousel";
-import { sectorsData } from "./data";
+import { consultData, sectorsData } from "./data";
+import { GiCheckMark } from "react-icons/gi";
 
 const Home = () => {
   // useEffect(() => {
@@ -56,25 +57,42 @@ const Home = () => {
         swipeable={false}
         transitionTime={2}
       >
-        <div className="w-full lg:h-[70vh]" style={{}}>
+        <div className="w-full lg:h-[100vh]" style={{}}>
           <div className="grid grid-col-1 lg:w-[90%] gap-4 mx-auto md:grid-cols-2 lg:gap-32 lg:grid-cols-2 px-4 pt-12 ">
             <div className="">
               <div
-                className="text-5xl pt-[60px] lg:pt-[70px] text-white text-left font-bold leading-[60px] "
+                className="text-3xl first-letter:text-3xl pt-[60px] lg:pt-[70px] text-white text-left font-bold leading-[60px] "
                 style={{}}
               >
-                Lorem Ipsum is simply dummy text of the printing and
+                Some call it Circular Economy, while others see it as the{" "}
+                <span className="text-white bg-green-600 px-2 py-1" style={{}}>
+                  {" "}
+                  Net Zero goal
+                </span>{" "}
+                .<br /> To many more, it is the{" "}
+                <span className="text-white bg-green-600 px-2 py-1" style={{}}>
+                  Energy Transition
+                </span>{" "}
+                and to even many others,{" "}
+                <span className="text-white bg-green-600 px-2 py-1" style={{}}>
+                  Sustainability
+                </span>{" "}
+                captures it best.
               </div>
-              <div className="text-2xl text-white text-left pt-4 font-extralight ">
-                Lorem Ipsum is simply been the industry'. been the industry'.
-                Lorem Ipsum is simply been the industry
+              <div className="text-lg text-white text-left pt-4 font-extralight ">
+                Whichever shapes or forms the{" "}
+                <span className="font-semibold"> Green Economy</span> comes to
+                you, we help you crystallize your strategy and engineer it to
+                reality. Your clients and end customers are looking forward to a
+                greener world. We help you create it not just faster but also
+                <span className="font-semibold uppercase"> GREENER</span>.
               </div>
               <div className="flex flex-row w-full mt-12 items-center ">
                 <div
                   className=""
                   onClick={() =>
                     window.scroll({
-                      top: 500,
+                      top: 1000,
                       left: 0,
                       behavior: "smooth",
                     })
@@ -82,7 +100,7 @@ const Home = () => {
                 >
                   <Button
                     text={"Learn more"}
-                    bg={"bg-primary"}
+                    bg={"bg-green-600"}
                     color={"text-white"}
                   />
                 </div>
@@ -98,48 +116,7 @@ const Home = () => {
             <div className="h-[400px] bg-white rounded-md shadow-sm sm:mt-[20px] lg:mt-[40px]"></div>
           </div>
         </div>
-        <div className="w-full lg:h-[70vh]" style={{}}>
-          <div className="grid grid-col-1 lg:w-[90%] gap-4 mx-auto md:grid-cols-2 lg:gap-32 lg:grid-cols-2 px-4 pt-12 ">
-            <div className="">
-              <div
-                className="text-5xl pt-[60px] lg:pt-[70px] text-white text-left font-bold leading-[60px] "
-                style={{}}
-              >
-                Another content is simply dummy text of the printing and
-              </div>
-              <div className="text-2xl text-white text-left pt-4 font-extralight ">
-                Lorem Ipsum is simply been the industry'. been the industry'.
-                Lorem Ipsum is simply been the industry
-              </div>
-              <div className="flex flex-row w-full mt-12 items-center ">
-                <div
-                  className=""
-                  onClick={() =>
-                    window.scroll({
-                      top: 500,
-                      left: 0,
-                      behavior: "smooth",
-                    })
-                  }
-                >
-                  <Button
-                    text={"Learn more"}
-                    bg={"bg-primary"}
-                    color={"text-white"}
-                  />
-                </div>
-                <div className="ml-8 hidden">
-                  <Button
-                    text={"Learn more"}
-                    color={"text-zinc-800"}
-                    border={"border-sky-800"}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="h-[400px] bg-white rounded-md shadow-sm sm:mt-[20px] lg:mt-[40px]"></div>
-          </div>
-        </div>
+
         {/* <div>
           <img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aW5kdXN0cnl8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" />
           <p className="legend">Legend 2</p>
@@ -201,45 +178,64 @@ const Home = () => {
       </div>
 
       {/* section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 bg-white rounded-lg md:w-[80%] mx-auto lg:gap-32 mt-8 lg:mt-12 p-3 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 bg-white rounded-lg md:w-[80%] mx-auto lg:gap-10 mt-8 lg:mt-12 p-3 ">
         <div
           className="h-full p-4 flex flex-col items-start justify-center "
           data-aos="fade-up"
           data-aos-duration="800"
         >
           <div className="text-lg text-primary">Consulting</div>
-          <div className="text-4xl font-bold text-zinc-800 leading-[40px]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem
+          <div className="text-3xl font-bold text-zinc-800 leading-[40px]">
+            The Green Economy has provided us with the possibilities of green
+            fuels and products
           </div>
           <div className="text-1xl pt-4 font-normal text-zinc-800 md:w-[90%] py-3  leading-8 ">
             {/* <span className="text-[50px] font-bold italic">“</span> */}
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s.
+            The Green Economy has provided us with the possibilities of green
+            fuels and products. However, it has also presented some challenges
+            that are usually specific if not unprecedented. Each renewable and
+            low carbon biofuels project is unique and requires tailor made
+            solutions. And this is where we come in to provide our clients with
+            tested solutions to navigate the less travelled path of green fuels
+            and products.
           </div>
-          <div className="w-[170px] flex flex-row p-3 rounded-md bg-primary items-center justify-center">
+          <div className="w-[170px] flex flex-row p-3 rounded-md bg-green-400 items-center justify-center">
             <a
               href="/services#services"
               className="text-sm font-light text-white d-block"
             >
               Our services
             </a>
-            <div className="flex flex-row bg-primary items-center justify-center ml-4">
+            <div className="flex flex-row bg-green-400 items-center justify-center ml-4">
               <BsArrowRightShort color="#fff" size={25} />
             </div>
           </div>
         </div>
-        <div className="h-[600px]  border-4 border-zinc-200 shadow-sm rounded-lg bg-white overflow-hidden">
-          <img
+        <div className="p-4 flex items-start shadow-sm rounded-lg bg-white overflow-hidden">
+          <div className="lg:pt-4">
+            <div className="text-zinc-800 text-2xl font-semibold">
+              Our clients enjoy the following consulting services amongst
+              others:
+            </div>
+            <div className="">
+              {consultData.map((i) => (
+                <div className="flex my-4" key={i.id}>
+                  <div className="mr-4  flex items-center justify-center ">
+                    <GiCheckMark color={"green"} />
+                  </div>
+                  <div className="text-zinc-700">{i.content}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* <img
             src={
               "https://images.unsplash.com/photo-1580411402629-e0cdf76f3d3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2912&q=80"
             }
             alt={""}
             className="w-full h-full object-center"
-          />
+          /> */}
         </div>
       </div>
 
