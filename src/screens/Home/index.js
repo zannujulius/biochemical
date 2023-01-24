@@ -18,13 +18,13 @@ import { consultData, projectData, sectorsData } from "./data";
 import { GiCheckMark } from "react-icons/gi";
 
 const Home = () => {
-  // useEffect(() => {
-  //   window.scroll({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  //   return () => {};
-  // }, []);
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
+    return () => {};
+  }, []);
 
   const DropDown = () => {
     return Array.from(Array(3)).map((item, index) => (
@@ -113,7 +113,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[400px] bg-white rounded-md shadow-sm sm:mt-[20px] lg:mt-[40px]"></div>
+            <div className="h-[400px] bg-white rounded-md shadow-sm sm:mt-[20px] md:mt-[80px] lg:mt-[120px]"></div>
           </div>
         </div>
 
@@ -199,7 +199,7 @@ const Home = () => {
             tested solutions to navigate the less travelled path of green fuels
             and products.
           </div>
-          <div className="w-[170px] flex flex-row p-3 rounded-md bg-green-400 items-center justify-center">
+          <div className="w-[170px] flex flex-row p-3 rounded-md bg-green-400 items-center justify-center hidden">
             <a
               href="/services#services"
               className="text-sm font-light text-white d-block"
@@ -211,7 +211,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="p-4 flex items-start shadow-sm rounded-lg bg-white overflow-hidden">
+        <div
+          className="p-4 flex items-start shadow-sm rounded-lg bg-white overflow-hidden"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
           <div className="lg:pt-4">
             <div className="text-zinc-800 text-2xl font-semibold">
               Our clients enjoy the following consulting services amongst
@@ -240,25 +244,35 @@ const Home = () => {
       </div>
 
       {/* badges */}
-      <div className="grid my-8 grid-cols-1 lg:grid-cols-4 bg-white rounded-lg md:w-[80%] mx-auto gap-8 mt-8 lg:mt-12 p-3">
-        {sectorsData.map((i) => (
-          <div
-            className="lg:h-[250px] bg-gray-100 my-6 p-4 flex align-center justify-center flex-col"
-            key={i.id}
-            data-aos="fade-up"
-            data-aos-duration="800"
-          >
-            <div className="flex align-center justify-center mt-[-50px]">
-              <div className="bg-primary w-[80px] h-[80px] pt-6 flex align-center justify-center rounded-full">
-                <div className="h-[30px]">{i.icon}</div>
+      <div className="md:w-[80%] mx-auto gap-8 mt-8 lg:mt-12 p-3">
+        <div className="w-full flex flex-row items-center">
+          <div className="lg:w-[150px] text-zinc-800">Our Services.</div>
+          <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
+        </div>
+        <div className="lg:w-[500px] text-xl pt-3 font-bold text-zinc-800">
+          Lorem Ipsum is simply dummy text of the printi dummy text of the
+          printing and typesetting industry. Lorem
+        </div>
+        <div className="grid my-8 grid-cols-1 lg:grid-cols-4 bg-white rounded-lg gap-10">
+          {sectorsData.map((i) => (
+            <div
+              className="lg:h-[250px] bg-gray-100 my-6 p-4 flex align-center justify-center flex-col"
+              key={i.id}
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <div className="flex align-center justify-center mt-[-50px]">
+                <div className="bg-primary w-[80px] h-[80px] pt-6 flex align-center justify-center rounded-full">
+                  <div className="h-[30px]">{i.icon}</div>
+                </div>
+              </div>
+              <div className="pt-4">
+                <div className="font-bold text-center uppercase">{i.title}</div>
+                <div className="pt-2 text-center font-light">{i.content}</div>
               </div>
             </div>
-            <div className="pt-4">
-              <div className="font-bold text-center uppercase">{i.title}</div>
-              <div className="pt-2 text-center">{i.content}</div>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
       <div className="breaker hidden lg:p-8 p-4 w-full  flex-col items-center justify-center">

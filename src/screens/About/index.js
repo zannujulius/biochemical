@@ -15,7 +15,7 @@ const About = () => {
     <Layout>
       <div className="w-[100vw] h-[100vh] lg:h-[80vh] pt-16 lg:pt-0 md:pt-0 flex flex-row items-center justify-center bg-gradient-to-r from-[#111214] to-[#072912]">
         <div className="px-4 animate__animated animate__fadeInUp">
-          <div className="text-white md:text-center lg:text-center text-left font-bold text-lg ">
+          <div className="text-white md:text-center lg:text-center text-left font-bold text-lg pt-10 md:pt-0 lg:pt-0 ">
             About Us.
           </div>
           <div
@@ -80,7 +80,7 @@ const About = () => {
           </div>
           <div className="">
             <div className="font-bold text-lg">Lorem Ipsum is simply</div>
-            <div className="font-normal text-md text-zinc-700 pt-3 italic">
+            <div className="font-normal text-zinc-700 pt-3 ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -105,8 +105,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="solution-bg w-full my-20 p-8  z-[40] ">
-        <div className="lg:w-[90%] h-full mx-auto flex flex-wrap flex-row items-center justify-between">
+      <div className="solution-bg lg:w-[80%] rounded-sm mx-auto my-20 p-8  z-[40] ">
+        <div className=" h-full mx-auto flex flex-wrap flex-row items-center justify-between">
           <div className="">
             <div className="text-2xl font-bold text-white  underline ">
               Need a solution ?

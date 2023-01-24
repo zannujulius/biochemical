@@ -2,35 +2,36 @@ import { GrMoney } from "react-icons/gr";
 import { SiManageiq } from "react-icons/si";
 import { FcManager } from "react-icons/fc";
 import { MdManageAccounts } from "react-icons/md";
+import { FaMoneyBill } from "react-icons/fa";
 
 export const sectorsData = [
   {
     id: 1,
-    icon: <GrMoney size={"30"} color={"#fff"} />,
-    title: "Finance",
+    icon: <FaMoneyBill size={"30"} color={"#fff"} />,
+    title: "Project Financing",
     content:
-      "1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
   },
   {
     id: 2,
     icon: <SiManageiq size={"30"} color={"#fff"} />,
-    title: "Management",
+    title: "Project Management",
     content:
-      "1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
   },
   {
     id: 3,
     icon: <MdManageAccounts size={"30"} color={"#fff"} />,
-    title: "Management",
+    title: "Project Development",
     content:
-      "1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
   },
   {
     id: 4,
     icon: <FcManager size={"30"} color={"#fff"} />,
     title: "Consulting",
     content:
-      "1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
   },
 ];
 
