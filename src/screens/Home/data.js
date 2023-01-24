@@ -60,3 +60,34 @@ export const consultData = [
     content: " Project Planning",
   },
 ];
+
+export const projectData = [
+  {
+    id: 1,
+    content: "Project organization and coordination",
+  },
+  {
+    id: 2,
+    content: "Scheduling and schedule control",
+  },
+  {
+    id: 3,
+    content: "Cost monitoring",
+  },
+  {
+    id: 4,
+    content: "Progress monitoring",
+  },
+  {
+    id: 5,
+    content: "Quality Management",
+  },
+  {
+    id: 6,
+    content: "Contract Management",
+  },
+  {
+    id: 7,
+    content: "Project reporting",
+  },
+];

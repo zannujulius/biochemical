@@ -14,7 +14,7 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import { Carousel } from "react-responsive-carousel";
-import { consultData, sectorsData } from "./data";
+import { consultData, projectData, sectorsData } from "./data";
 import { GiCheckMark } from "react-icons/gi";
 
 const Home = () => {
@@ -348,6 +348,88 @@ const Home = () => {
               </div>
             </Link>
           ))}
+        </div>
+      </div>
+
+      {/* section */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 bg-white rounded-lg md:w-[80%] mx-auto lg:gap-4 mt-8 lg:mt-12 p-3 ">
+        <div
+          className="h-full p-4 flex flex-col items-start justify-center "
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
+          <div className="text-lg text-primary">Project Development</div>
+          <div className="text-3xl font-bold text-zinc-800 leading-[40px]">
+            We help move your projects from mere ideas to Final Investment
+            Decision (FID).
+          </div>
+          <div className="text-1xl pt-4 font-normal text-zinc-800 md:w-[90%] py-3  leading-8 ">
+            {/* <span className="text-[50px] font-bold italic">“</span> */}
+            For your renewable and low carbon fuels production plants,
+            trustworthy feasibility studies, and a technically sound site
+            development process is of utmost importance. We help move your
+            projects from mere ideas to Final Investment Decision (FID). The
+            availability of the right volume of raw materials, possible
+            application areas for biofuels products (biomethane/bio-LNG,
+            bioethanol, biodiesel or SAF), the suitability of an area of land
+            for the biofuel plant and the issue of reliable offtake points are
+            all part of the feasibility analysis. We develop a suitable plant
+            concept, covering the issues of energy optimization and by-products
+            treatment or valorization. For projects of this level of economic
+            and environmental impact, it goes without saying that we help
+            coordinate the necessary approval processes with the relevant
+            authorities. You can therefore then trust our project timeline and
+            cost estimates. Your lenders and investors can trust on our
+            projections for decision making.
+          </div>
+          <div className="w-[170px] hidden  flex-row p-3 rounded-md bg-green-400 items-center justify-center">
+            <a
+              href="/services#services"
+              className="text-sm font-light text-white d-block"
+            >
+              Our services
+            </a>
+            <div className="flex flex-row bg-green-400 items-center justify-center ml-4">
+              <BsArrowRightShort color="#fff" size={25} />
+            </div>
+          </div>
+        </div>
+        <div
+          className="p-4 flex items-start shadow-sm rounded-lg bg-white overflow-hidden"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
+          <div className="">
+            <div className="text-lg text-primary">Project Management</div>
+            <div className="text-zinc-800 text-2xl font-semibold">
+              Together with our clients, we define the scope of the project at
+              the outset and lay out a feasible work plan that is geared towards
+              achieving the project objectives.
+            </div>
+            <div className="text-1xl pt-4 font-normal text-zinc-800 md:w-[90%] py-3  leading-8 ">
+              To manage your renewable and low carbon fuels projects, we cover
+              the whole spectrum from initiation, planning, control and
+              monitoring of such projects in a structured and efficient manner.
+            </div>
+            <div className="">
+              {projectData.map((i) => (
+                <div className="flex my-4" key={i.id}>
+                  <div className="mr-4 flex items-center justify-center ">
+                    <GiCheckMark color={"green"} />
+                  </div>
+                  <div className="text-zinc-700">{i.content}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* <img
+            src={
+              "https://images.unsplash.com/photo-1580411402629-e0cdf76f3d3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2912&q=80"
+            }
+            alt={""}
+            className="w-full h-full object-center"
+          /> */}
         </div>
       </div>
 

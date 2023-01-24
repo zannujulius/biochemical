@@ -19,14 +19,31 @@ const About = () => {
             About Us.
           </div>
           <div
-            className="w-[100%] lg:w-[70%] mx-auto text-5xl md:text-center lg:text-center text-left font-bold text-white leading-[60px]"
+            className="text-3xl first-letter:text-3xl pt-4 lg:w-[70%] mx-auto text-white text-center font-bold leading-[60px] "
             style={{}}
           >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
+            Some call it Circular Economy, while others see it as the{" "}
+            <span className="text-white bg-green-600 px-2 py-1" style={{}}>
+              {" "}
+              Net Zero goal
+            </span>{" "}
+            . To many more, it is the{" "}
+            <span className="text-white bg-green-600 px-2 py-1" style={{}}>
+              Energy Transition
+            </span>{" "}
+            and to even many others,{" "}
+            <span className="text-white bg-green-600 px-2 py-1" style={{}}>
+              Sustainability
+            </span>{" "}
+            captures it best.
           </div>
-          <div className="text-1xl pt-4 font-light lg:font-extralight md:text-center lg:text-center text-left text-white ">
-            Lorem Ipsum is simply been the industry'. been the industry'. Lorem
-            Ipsum is simply been the industry
+          <div className="text-1xl pt-4 font-light lg:w-[70%] mx-auto lg:font-extralight md:text-center lg:text-center text-left text-white ">
+            Whichever shapes or forms the{" "}
+            <span className="font-semibold"> Green Economy</span> comes to you,
+            we help you crystallize your strategy and engineer it to reality.
+            Your clients and end customers are looking forward to a greener
+            world. We help you create it not just faster but also
+            <span className="font-semibold uppercase"> GREENER</span>.
           </div>
         </div>
       </div>
