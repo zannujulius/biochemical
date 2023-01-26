@@ -5,7 +5,7 @@ import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 const Footer = () => {
   return (
     <div className="w-full px-8 py-6 lg:p-16 bg-zinc-800">
-      <div className="lg:w-80% mx-auto">
+      <div className="lg:w-80% mx-auto ">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           <div className="">
             <div className="">
@@ -36,27 +36,6 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-          </div>
-          <div className="">
-            <div className="font-bold text-zinc-100 text-md pt-3">Project</div>
-            {Array.from(Array(2)).map((i, index) => (
-              <Link
-                key={index}
-                to="/project/we"
-                className="py-2 cursor-pointer pr-8 flex align-center pr mt-2 font-light text-sm text-zinc-100"
-              >
-                <div className="w-[50px] h-[40px] pr-2 overflow-hidden rounded-sm">
-                  <img
-                    src={
-                      "https://plus.unsplash.com/premium_photo-1663100163323-bcc8b597ce4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW5kdXN0cnl8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-                    }
-                    className={"w-full h-full object-cover"}
-                    alt={""}
-                  />
-                </div>
-                <div className="pt-2">lorem ipsum simply dummy text of the</div>
-              </Link>
-            ))}
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-2">
             <div className="">

@@ -92,3 +92,34 @@ export const projectData = [
     content: "Project reporting",
   },
 ];
+
+export const financingData = [
+  {
+    id: 1,
+    content: "CAPEX and OPEX Forecasting",
+  },
+  {
+    id: 2,
+    content: "Unit Technical Cost (UTC) Estimation",
+  },
+  {
+    id: 3,
+    content: "Financial Modeling",
+  },
+  {
+    id: 4,
+    content: "Feasibility Studies and Risk Analysis",
+  },
+  {
+    id: 5,
+    content: "Techno-Economic Analysis",
+  },
+  {
+    id: 6,
+    content: "Technology Due Diligence",
+  },
+  {
+    id: 7,
+    content: "Third party review",
+  },
+];

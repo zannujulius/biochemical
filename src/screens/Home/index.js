@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 import "./style.css";
 import { BsArrowRightShort } from "react-icons/bs";
 import Brand from "../../assets/images/brand.jpg";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import moment from "moment";
 import {
@@ -14,16 +14,39 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import { Carousel } from "react-responsive-carousel";
-import { consultData, projectData, sectorsData } from "./data";
+import { consultData, financingData, projectData, sectorsData } from "./data";
 import { GiCheckMark } from "react-icons/gi";
+import Typed from "typed.js";
 
 const Home = () => {
+  // useEffect(() => {
+  //   window.scroll({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  //   return () => {};
+  // }, []);
+
+  const element = useRef(null);
+  const typed = useRef(null);
   useEffect(() => {
-    window.scroll({
-      top: 0,
-      behavior: "smooth",
-    });
-    return () => {};
+    const options = {
+      strings: [
+        "Circular economy.",
+        "Net Zero goal.",
+        "Energy Transition.",
+        "Sustainability.",
+      ],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+    };
+    typed.current = new Typed(element.current, options);
+    return () => {
+      // Make sure to destroy Typed instance during cleanup
+      // to prevent memory leaks
+      typed.current.destroy();
+    };
   }, []);
 
   const DropDown = () => {
@@ -59,9 +82,9 @@ const Home = () => {
       >
         <div className="w-full lg:h-[100vh]" style={{}}>
           <div className="grid grid-col-1 lg:w-[90%] gap-4 mx-auto md:grid-cols-2 lg:gap-32 lg:grid-cols-2 px-4 pt-12 ">
-            <div className="">
+            <div className="lg:pt-20">
               <div
-                className="text-3xl first-letter:text-3xl pt-[60px] lg:pt-[70px] text-white text-left font-bold leading-[60px] "
+                className="text-3xl hidden first-letter:text-3xl pt-[60px] lg:pt-[70px] text-white text-left font-bold leading-[60px] "
                 style={{}}
               >
                 Some call it Circular Economy, while others see it as the{" "}
@@ -79,20 +102,34 @@ const Home = () => {
                 </span>{" "}
                 captures it best.
               </div>
-              <div className="text-lg text-white text-left pt-4 font-extralight ">
+              <div className="h-[150px] flex items-center ">
+                <div
+                  className="text-5xl pt-[60px] lg:pt-[70px] text-white text-left font-bold leading-[60px] "
+                  ref={element}
+                />
+              </div>
+
+              <div className="text-1xl lg:text-2xl text-white text-left pt-4 font-extralight ">
                 Whichever shapes or forms the{" "}
-                <span className="font-semibold"> Green Economy</span> comes to
-                you, we help you crystallize your strategy and engineer it to
-                reality. Your clients and end customers are looking forward to a
-                greener world. We help you create it not just faster but also
-                <span className="font-semibold uppercase"> GREENER</span>.
+                <span className="font-semibold text-green-600">
+                  {" "}
+                  Green Economy
+                </span>{" "}
+                comes to you, we help you crystallize your strategy and engineer
+                it to reality. Your clients and end customers are looking
+                forward to a greener world. We help you create it not just
+                faster but also{" "}
+                <span className="font-semibold uppercase text-green-600">
+                  GREENER
+                </span>
+                .
               </div>
               <div className="flex flex-row w-full mt-12 items-center ">
                 <div
                   className=""
                   onClick={() =>
                     window.scroll({
-                      top: 1000,
+                      top: 800,
                       left: 0,
                       behavior: "smooth",
                     })
@@ -113,7 +150,15 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[400px] bg-white rounded-md shadow-sm sm:mt-[20px] md:mt-[80px] lg:mt-[120px]"></div>
+            <div
+              className="h-[400px] rounded-md shadow-sm sm:mt-[20px] md:mt-[80px] lg:mt-[120px]"
+              style={{
+                background: `url("https://wallpaperaccess.com/full/4736716.jpg")`,
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+            ></div>
           </div>
         </div>
 
@@ -249,26 +294,28 @@ const Home = () => {
           <div className="lg:w-[150px] text-zinc-800">Our Services.</div>
           <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
         </div>
-        <div className="lg:w-[500px] text-xl pt-3 font-bold text-zinc-800">
+        <div className="lg:w-[500px] text-xl pt-3 font-bold text-zinc-800 hidden">
           Lorem Ipsum is simply dummy text of the printi dummy text of the
           printing and typesetting industry. Lorem
         </div>
         <div className="grid my-8 grid-cols-1 lg:grid-cols-4 bg-white rounded-lg gap-10">
           {sectorsData.map((i) => (
             <div
-              className="lg:h-[250px] bg-gray-100 my-6 p-4 flex align-center justify-center flex-col"
+              className="lg:h-[100px] bg-gray-100 my-6 p-4 flex align-center justify-center flex-col"
               key={i.id}
               data-aos="fade-up"
               data-aos-duration="800"
             >
-              <div className="flex align-center justify-center mt-[-50px]">
+              <div className="flex align-center justify-center mt-[-60px]">
                 <div className="bg-primary w-[80px] h-[80px] pt-6 flex align-center justify-center rounded-full">
                   <div className="h-[30px]">{i.icon}</div>
                 </div>
               </div>
               <div className="pt-4">
                 <div className="font-bold text-center uppercase">{i.title}</div>
-                <div className="pt-2 text-center font-light">{i.content}</div>
+                <div className="pt-2 text-center font-light hidden">
+                  {i.content}
+                </div>
               </div>
             </div>
           ))}
@@ -319,7 +366,7 @@ const Home = () => {
       </div>
 
       {/* section */}
-      <div className="w-[80%] mx-auto mt-16 mb-16 ">
+      <div className="w-[80%] mx-auto mt-16 mb-16 hidden">
         <div className="w-full flex flex-row items-center">
           <div className="lg:w-[150px] text-zinc-800">Our Business.</div>
           <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
@@ -427,6 +474,79 @@ const Home = () => {
             </div>
             <div className="">
               {projectData.map((i) => (
+                <div className="flex my-4" key={i.id}>
+                  <div className="mr-4 flex items-center justify-center ">
+                    <GiCheckMark color={"green"} />
+                  </div>
+                  <div className="text-zinc-700">{i.content}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* <img
+            src={
+              "https://images.unsplash.com/photo-1580411402629-e0cdf76f3d3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2912&q=80"
+            }
+            alt={""}
+            className="w-full h-full object-center"
+          /> */}
+        </div>
+      </div>
+
+      {/* section */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 bg-white rounded-lg md:w-[80%] mx-auto lg:gap-4 mt-8 lg:mt-12 p-3 ">
+        <div
+          className="h-full p-4 flex flex-col items-start justify-center "
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
+          <div className="text-lg text-primary">Project Financing</div>
+          <div className="text-3xl font-bold text-zinc-800 leading-[40px]">
+            We support our clients in ensuring their business meets technical,
+            economical, environmental and regulatory requirements to stand a
+            good chance of getting funded.
+          </div>
+          <div className="text-1xl pt-4 font-normal text-zinc-800 md:w-[90%] py-3  leading-8 ">
+            {/* <span className="text-[50px] font-bold italic">“</span> */}
+            Renewable and Low Carbon Biofuels provide solutions to combat the
+            pollution of our planet with unwanted greenhouse gases. They also
+            offer great business opportunities for investors and organizations
+            in this space. Due diligence activities help validate business
+            proposals and proffer risk mitigation measures to ensure successful
+            project execution and operation over the project lifecycle.
+          </div>
+          <div className="w-[170px] hidden  flex-row p-3 rounded-md bg-green-400 items-center justify-center">
+            <a
+              href="/services#services"
+              className="text-sm font-light text-white d-block"
+            >
+              Our services
+            </a>
+            <div className="flex flex-row bg-green-400 items-center justify-center ml-4">
+              <BsArrowRightShort color="#fff" size={25} />
+            </div>
+          </div>
+        </div>
+        <div
+          className="p-4 flex items-start shadow-sm rounded-lg bg-white overflow-hidden lg:mt-6"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
+          <div className="">
+            {/* <div className="text-lg text-primary">Project Management</div> */}
+            <div className="text-zinc-800 text-2xl font-semibold ">
+              We therefore provided the following services to our clients to
+              help them stand a higher than average chance of Project Financing
+              regardless of the size and scope of the project:
+            </div>
+            <div className="text-1xl pt-4 font-normal text-zinc-800 md:w-[90%] py-3  leading-8 hidden">
+              To manage your renewable and low carbon fuels projects, we cover
+              the whole spectrum from initiation, planning, control and
+              monitoring of such projects in a structured and efficient manner.
+            </div>
+            <div className="">
+              {financingData.map((i) => (
                 <div className="flex my-4" key={i.id}>
                   <div className="mr-4 flex items-center justify-center ">
                     <GiCheckMark color={"green"} />
