@@ -155,7 +155,7 @@ const About = () => {
         <div className="w-full grid grid-cols-2 lg:grid-rows-4 lg:grid-cols-3 h-[500px] ">
           <div className="row-span-2 sector relative">
             <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
-              Low Carbon Fuels
+              Low Carbon Biofuels
             </div>
           </div>
           <div className="row-span-2 sector relative">
