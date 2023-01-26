@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="w-full px-8 py-6 lg:p-16 bg-zinc-800">
       <div className="lg:w-80% mx-auto ">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="">
             <div className="">
               <div className=""></div>
@@ -83,7 +83,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="h-[2px] rounded-lg w-full bg-zinc-300 mt-2"></div>
+        <div className="h-[1px] rounded-lg w-full bg-zinc-300 mt-2"></div>
         <div className="text-sm text-zinc-100 font-light text-center pt-4">
           Copyright 2022{" "}
           <span className="font-bold text-zinc-100">

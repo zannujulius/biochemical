@@ -64,7 +64,7 @@ const Solutions = () => {
               >
                 <Button
                   text={"Learn more"}
-                  bg={"bg-primary"}
+                  bg={"bg-green-600"}
                   color={"text-white"}
                 />
               </div>
@@ -79,7 +79,7 @@ const Solutions = () => {
       </div>
 
       {/* section */}
-      <div className="lg:w-[80%] mx-auto mt-16 z-[40]">
+      <div className="lg:w-[80%] mx-auto mt-16 z-[40] hidden">
         <div className="p-4">
           <div className="w-full flex flex-row items-center ">
             <div className="w-[150px] text-zinc-800">Our Process.</div>
@@ -151,17 +151,18 @@ const Solutions = () => {
           </div>
         </div>
       </div>
-      <div className="mt-16  z-[40]">
-        <div className="text-xl text-center text-primary font-bold pt-6">
+      <div className="mt-16 z-[40]">
+        <div className="text-xl text-center text-green-600 font-bold pt-6">
           Our Focus.
         </div>
-        <div className="text-center text-md p-2 font-light text-zinc-800 pt-2 w-full md:w-[70%] mx-auto">
+        <div className=" hidden text-center text-md p-2 font-light text-zinc-800 pt-2 w-full md:w-[70%] mx-auto">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum
         </div>
       </div>
       {/* section */}
-      <div className="bg-[#f5f6ff] mt-10  z-[40] py-8" id="#services">
+      {/* bg-[#f5f6ff] */}
+      <div className="  z-[40] pb-8" id="#services">
         <div className="lg:w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-3 mt-4">
           {focusData.map((i, index) => (
             <div className="" key={i.id}>
@@ -171,13 +172,14 @@ const Solutions = () => {
                 // data-aos-duration="2000"
               >
                 <div className="">
-                  <div className="text-lg font-normal text-primary">
+                  <div className="pb-3">
+                    <div className="">{i.icon}</div>
+                  </div>
+                  <div className="text-lg font-normal text-primary hidden"></div>
+                  <div className="text-3xl font-bold text-zinc-800 ">
                     {i.title}
                   </div>
-                  <div className="text-3xl font-bold text-zinc-800">
-                    Lorem Ipsum is simply dummy.
-                  </div>
-                  <div className="text-md lg:text-sm font-normal lg:font-normal text-zinc-600 pt-4">
+                  <div className="text-md lg:text-sm font-normal lg:font-normal hidden text-zinc-600 pt-4">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
@@ -253,6 +255,63 @@ const Solutions = () => {
                 bg={"bg-transparent"}
               />
             </a>
+          </div>
+        </div>
+      </div>
+      <div className="w-[90%] lgw-[80%] mx-auto mt-32 mb-32 ">
+        <div className="w-full flex flex-row items-center">
+          <div className="lg:w-[150px] text-zinc-800">Services .</div>
+          <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
+        </div>
+        <div className="lg:w-[500px] text-xl pt-3 font-bold text-zinc-800">
+          Some of the service we offer.
+        </div>
+        <div className="w-full grid grid-cols-2 lg:grid-rows-4 lg:grid-cols-3  h-[500px] pt-6">
+          <div className="row-span-2 area relative">
+            <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
+              Consulting
+            </div>
+          </div>
+          <div className="row-span-2 area relative">
+            <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
+              Project Development
+            </div>
+          </div>
+          <div className="row-span-2 area relative">
+            <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
+              Project Financing
+            </div>
+          </div>
+          <div className="row-span-2 area relative">
+            <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
+              Project Management
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-[90%] lgw-[80%] mx-auto mt-32 mb-16">
+        <div className="w-full flex flex-row items-center">
+          <div className="lg:w-[150px] text-zinc-800">Our Sectors</div>
+          <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
+        </div>
+        <div className="lg:w-[500px] text-xl pt-3 font-bold text-zinc-800">
+          Some of the economic sector.
+        </div>
+        <div className="w-full grid grid-cols-2 lg:grid-rows-4 lg:grid-cols-3 h-[500px] ">
+          <div className="row-span-2 sector relative">
+            <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
+              Low Carbon Fuels
+            </div>
+          </div>
+          <div className="row-span-2 sector relative">
+            <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
+              Solar and Wind
+            </div>
+          </div>
+          <div className="row-span-2 sector relative">
+            <div className="absolute bottom-5 left-2 text-white font-normal text-lg ">
+              Food and Pharmaceuticals
+            </div>
           </div>
         </div>
       </div>

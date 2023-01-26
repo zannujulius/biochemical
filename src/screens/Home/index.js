@@ -19,13 +19,13 @@ import { GiCheckMark } from "react-icons/gi";
 import Typed from "typed.js";
 
 const Home = () => {
-  // useEffect(() => {
-  //   window.scroll({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  //   return () => {};
-  // }, []);
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
+    return () => {};
+  }, []);
 
   const element = useRef(null);
   const typed = useRef(null);
@@ -109,7 +109,7 @@ const Home = () => {
                 />
               </div>
 
-              <div className="text-1xl lg:text-2xl text-white text-left pt-4 font-extralight ">
+              <div className="text-2xl mt-2 lg:text-2xl text-white text-left pt-4 font-extralight ">
                 Whichever shapes or forms the{" "}
                 <span className="font-semibold text-green-600">
                   {" "}
@@ -120,11 +120,10 @@ const Home = () => {
                 forward to a greener world. We help you create it not just
                 faster but also{" "}
                 <span className="font-semibold uppercase text-green-600">
-                  GREENER
+                  GREENER.
                 </span>
-                .
               </div>
-              <div className="flex flex-row w-full mt-12 items-center ">
+              <div className="flex flex-row w-full mt-8 items-center ">
                 <div
                   className=""
                   onClick={() =>
@@ -234,7 +233,7 @@ const Home = () => {
             The Green Economy has provided us with the possibilities of green
             fuels and products
           </div>
-          <div className="text-1xl pt-4 font-normal text-zinc-800 md:w-[90%] py-3  leading-8 ">
+          <div className="text-1xl pt-4 font-normal text-zinc-800 md:w-[90%] py-3 leading-8 ">
             {/* <span className="text-[50px] font-bold italic">“</span> */}
             The Green Economy has provided us with the possibilities of green
             fuels and products. However, it has also presented some challenges
@@ -307,7 +306,7 @@ const Home = () => {
               data-aos-duration="800"
             >
               <div className="flex align-center justify-center mt-[-60px]">
-                <div className="bg-primary w-[80px] h-[80px] pt-6 flex align-center justify-center rounded-full">
+                <div className="bg-primary w-[70px] h-[70px] pt-5 flex align-center justify-center rounded-full">
                   <div className="h-[30px]">{i.icon}</div>
                 </div>
               </div>

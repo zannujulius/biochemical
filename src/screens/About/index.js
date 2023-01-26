@@ -47,25 +47,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-[90%] lg:w-[80%] mx-auto grid gap-10 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 lg:mt-[-30px] md:mt-[-30px]">
-        {Array.from(Array(3)).map((_, i) => (
-          <div
-            className="bg-white drop-shadow-md lg:[250px] rounded-sm p-5 "
-            key={i}
-          >
-            <div className="h-[50px] w-[50px] ">
-              <img src={Research} alt="image" className="" />
-            </div>
-            <div className="pt-6 font-bold">Lorem Ipsum is simply dummy </div>
-            <div className="text-MD text-zinc-800 font-normal pt-1">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="w-[80%] mx-auto mt-16 lg:mb-32">
+
+      <div className="w-[80%] mx-auto mt-16 lg:mb-32 hidden">
         <div className="w-full flex flex-row items-center">
           <div className="w-[150px] text-zinc-800">Our Journey.</div>
           <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
@@ -130,7 +113,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-[90%] lgw-[80%] mx-auto mt-32 mb-32 ">
+      <div className="w-[90%] lgw-[80%] mx-auto mt-32 mb-32 hidden">
         <div className="w-full flex flex-row items-center">
           <div className="lg:w-[150px] text-zinc-800">Services .</div>
           <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
@@ -161,7 +144,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-[90%] lgw-[80%] mx-auto mt-32 mb-16">
+      <div className="w-[90%] lgw-[80%] mx-auto mt-32 mb-16 hidden">
         <div className="w-full flex flex-row items-center">
           <div className="lg:w-[150px] text-zinc-800">Our Sectors</div>
           <div className="h-[2px] rounded-lg w-full bg-zinc-300 "></div>
