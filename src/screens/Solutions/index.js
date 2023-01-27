@@ -43,7 +43,7 @@ const Solutions = () => {
       <div className="w-[100vw] h-[100vh] lg:h-[80vh] pt-16 lg:pt-0 md:pt-0 flex flex-row items-center justify-center bg-gradient-to-r from-[#111214] to-[#072912]">
         <div className="px-4 animate__animated animate__fadeInUp">
           <div className="text-white md:text-center lg:text-center text-left font-bold text-lg pt-10 md:pt-0 lg:pt-0 ">
-            Services
+            Services.
           </div>
           <div
             className="text-3xl first-letter:text-3xl pt-4 lg:w-[70%] lg:text-center md:text-center mx-auto text-white text-left font-bold leading-[60px] "
