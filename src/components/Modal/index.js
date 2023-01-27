@@ -32,7 +32,7 @@ const Modal = ({ closeModal }) => {
             Services
           </Link>
           <Link to="/sectors" className="pr-5 block py-2 my-3">
-            About
+            Sectors
           </Link>
           <Link to="/" className="pr-5 hidden  py-2 my-3">
             Support
