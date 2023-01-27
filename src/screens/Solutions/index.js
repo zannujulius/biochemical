@@ -47,7 +47,7 @@ const Solutions = () => {
             className="text-3xl pt-4 lg:w-[70%] lg:text-center md:text-center mx-auto text-left font-bold leading-[60px] "
             style={{}}
           >
-            <div className="text-2xl text-white">Sectors</div>
+            <div className="text-2xl text-white">Services</div>
             <div className="">
               <div className="h-[150px] flex items-center lg:justify-center ">
                 <div
