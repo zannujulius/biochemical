@@ -55,9 +55,9 @@ const Navbar = () => {
             </Link>
             <Link
               className="cursor-pointer mr-16 text-[15px] font-normal text-zinc-800 hover:text-primary transition-all p-2"
-              to="/about"
+              to="/sectors"
             >
-              About
+              Sectors
             </Link>
             <Link
               className=" hidden cursor-pointer mr-16 text-[15px] font-light text-zinc-800 hover:text-primary transition-all p-2"

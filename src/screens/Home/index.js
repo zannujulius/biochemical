@@ -83,25 +83,6 @@ const Home = () => {
         <div className="w-full lg:h-[100vh]" style={{}}>
           <div className="grid grid-col-1 lg:w-[90%] gap-4 mx-auto md:grid-cols-2 lg:gap-32 lg:grid-cols-2 px-4 pt-12 ">
             <div className="lg:pt-20">
-              <div
-                className="text-3xl hidden first-letter:text-3xl pt-[60px] lg:pt-[70px] text-white text-left font-bold leading-[60px] "
-                style={{}}
-              >
-                Some call it Circular Economy, while others see it as the{" "}
-                <span className="text-white bg-green-600 px-2 py-1" style={{}}>
-                  {" "}
-                  Net Zero goal
-                </span>{" "}
-                .<br /> To many more, it is the{" "}
-                <span className="text-white bg-green-600 px-2 py-1" style={{}}>
-                  Energy Transition
-                </span>{" "}
-                and to even many others,{" "}
-                <span className="text-white bg-green-600 px-2 py-1" style={{}}>
-                  Sustainability
-                </span>{" "}
-                captures it best.
-              </div>
               <div className="h-[150px] flex items-center ">
                 <div
                   className="text-5xl pt-[60px] lg:pt-[70px] text-white text-left font-bold leading-[60px] "

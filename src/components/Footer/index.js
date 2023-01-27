@@ -19,7 +19,7 @@ const Footer = () => {
                 🇩🇪 Germany:
               </div>
               <div className="font-normal text-zinc-100 text-sm pt-2">
-                Eichendorffstrasse 81 65187 Wiesbaden Germany
+                Eichendorffstr 18 65187 Wiesbaden Germany
               </div>
             </div>
             <div className="">
@@ -67,10 +67,10 @@ const Footer = () => {
                   Services
                 </Link>
                 <Link
-                  to="/about"
+                  to="/sectors"
                   className="  py-1 cursor-pointer pr-8  pr mt-2 block font-light text-sm text-zinc-100"
                 >
-                  About
+                  Sectors
                 </Link>
                 <Link className=" hidden py-1 cursor-pointer pr-8  pr mt-2  font-light text-sm text-zinc-100">
                   Contact Us

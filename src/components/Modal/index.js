@@ -31,7 +31,7 @@ const Modal = ({ closeModal }) => {
           <Link to="/services" className="pr-5 block py-2 my-3">
             Services
           </Link>
-          <Link to="/about" className="pr-5 block py-2 my-3">
+          <Link to="/sectors" className="pr-5 block py-2 my-3">
             About
           </Link>
           <Link to="/" className="pr-5 hidden  py-2 my-3">
