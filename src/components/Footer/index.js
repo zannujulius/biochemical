@@ -11,15 +11,26 @@ const Footer = () => {
             <div className="">
               <div className=""></div>
               <div className="font-bold text-zinc-100 text-2xl">
-                Greencrystal Engineering.
+                Greencrystal Engineering
               </div>
             </div>
-            <div className="font-light text-zinc-100 text-sm pt-2">
-              lore mips uemlo remip suemloremipsuemlor
+            <div className="">
+              <div className="font-light text-zinc-100 text-sm pt-2">
+                🇩🇪 Germany:
+              </div>
+              <div className="font-normal text-zinc-100 text-sm pt-2">
+                Eichendorffstrasse 81 65187 Wiesbaden Germany
+              </div>
             </div>
-            <div className="font-normal text-zinc-100 text-sm pt-2">
-              Address of your company in germany. POB 102. Mark Street
+            <div className="">
+              <div className="font-light text-zinc-100 text-sm pt-2">
+                🇳🇬 Nigeria:
+              </div>
+              <div className="font-normal text-zinc-100 text-sm pt-2">
+                Block M36, Jakande Low Cost Housing Estate, Isolo, Lagos
+              </div>
             </div>
+
             <div className="hidden">
               <div className="flex mt-4">
                 <Link
@@ -72,12 +83,12 @@ const Footer = () => {
               </div>
               <div>
                 <div className=" flex flex-row py-1 cursor-pointer pr-8  pr mt-2  font-light text-sm text-zinc-100">
-                  <AiFillPhone size={20} />
-                  <div> +2340919484903</div>
+                  <AiFillPhone size={15} className="pt-1" />
+                  <div className="pl-2">🇩🇪 +49 611 168 80759</div>
                 </div>
-                <div className="flex flex-row py-1 cursor-pointer pr-8  pr mt-2  font-light text-sm text-zinc-100">
-                  <AiFillMail size={20} />
-                  <div className="ml-2">enquiry@gmail.com</div>
+                <div className=" flex flex-row py-1 cursor-pointer pr-8  pr mt-2  font-light text-sm text-zinc-100">
+                  <AiFillPhone size={15} className="pt-1" />
+                  <div className="pl-2">🇩🇪 +49 1523 789 8801</div>
                 </div>
               </div>
             </div>
@@ -85,11 +96,9 @@ const Footer = () => {
         </div>
         <div className="h-[1px] rounded-lg w-full bg-zinc-300 mt-2"></div>
         <div className="text-sm text-zinc-100 font-light text-center pt-4">
-          Copyright 2022{" "}
           <span className="font-bold text-zinc-100">
             Greencrystal Engineering
           </span>{" "}
-          Ltd. Alright reserved.
         </div>
       </div>
     </div>
