@@ -409,19 +409,16 @@ const Home = () => {
             For your renewable and low carbon fuels production plants,
             trustworthy feasibility studies, and a technically sound site
             development process is of utmost importance. We help move your
-            projects from mere ideas to Final Investment Decision (FID). The
-            availability of the right volume of raw materials, possible
-            application areas for biofuels products (biomethane/bio-LNG,
-            bioethanol, biodiesel or SAF), the suitability of an area of land
-            for the biofuel plant and the issue of reliable offtake points are
-            all part of the feasibility analysis. We develop a suitable plant
-            concept, covering the issues of energy optimization and by-products
-            treatment or valorization. For projects of this level of economic
-            and environmental impact, it goes without saying that we help
-            coordinate the necessary approval processes with the relevant
-            authorities. You can therefore then trust our project timeline and
-            cost estimates. Your lenders and investors can trust on our
-            projections for decision making.
+            projects from mere ideas to Final Investment Decision (FID)...
+          </div>
+          <div className="flex flex-row w-full mt-8 items-center  ">
+            <Link to="/services" className="">
+              <Button
+                text={"Read more"}
+                bg={"bg-green-600"}
+                color={"text-white"}
+              />
+            </Link>
           </div>
           <div className="w-[170px] hidden  flex-row p-3 rounded-md bg-green-400 items-center justify-center">
             <a
@@ -452,15 +449,14 @@ const Home = () => {
               the whole spectrum from initiation, planning, control and
               monitoring of such projects in a structured and efficient manner.
             </div>
-            <div className="">
-              {projectData.map((i) => (
-                <div className="flex my-4" key={i.id}>
-                  <div className="mr-4 flex items-center justify-center ">
-                    <GiCheckMark color={"green"} />
-                  </div>
-                  <div className="text-zinc-700">{i.content}</div>
-                </div>
-              ))}
+            <div className="flex flex-row w-full mt-8 items-center  ">
+              <Link to="/services" className="">
+                <Button
+                  text={"Read more"}
+                  bg={"bg-green-600"}
+                  color={"text-white"}
+                />
+              </Link>
             </div>
           </div>
 
