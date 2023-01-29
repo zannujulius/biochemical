@@ -46,10 +46,10 @@ const About = () => {
             style={{}}
           >
             <div className="text-2xl text-white">Sectors</div>
-            <div className="">
-              <div className="h-[150px] flex items-center lg:justify-center ">
+            <div className="w-full">
+              <div className="h-[200px] flex items-start md:items-center lg:justify-center  ">
                 <div
-                  className="text-5xl pt-[60px] lg:pt-[70px] text-white text-left font-bold leading-[60px] "
+                  className="text-5xl pt-[30px] lg:pt-[70px] text-white text-left font-bold leading-[60px] "
                   ref={element}
                 />
               </div>
@@ -94,36 +94,6 @@ const About = () => {
       <div className="lg:w-[80%] grid grid-cols-1 lg:grid-cols-2 mx-auto mt-20 gap-20 px-4">
         <div className="">
           <div className="text-2xl text-green-600 font-semibold">
-            Hydrogen and Derivatives
-          </div>
-          <div className="font-semibold text-zinc-800 text-2xl">
-            Hydrogen is primarily used to produce chemical products, such as
-            plastics and fertilisers. Well over 90% of this hydrogen production
-            is through natural gas, which results in significant amounts of CO2
-            emissions.
-          </div>
-          <div className="">
-            Renewable hydrogen (or Green Hydrogen) can be obtained via
-            electrolysis using renewable electricity to split water into
-            hydrogen and oxygen. It will play a key role in decarbonising
-            sectors where other alternatives might be unfeasible or more
-            expensive. It can be used to replace fossil-based hydrogen for
-            transport and industrial processes, and to start new industrial
-            products, such as green fertilisers and steel. <br />
-            We work with our clients operating within the Hydrogen space or of
-            any of its derivatives:
-          </div>
-          {hydrodata.map((i, index) => (
-            <div className="flex my-4" key={index}>
-              <div className="mr-4  flex items-center justify-center ">
-                <GiCheckMark color={"green"} />
-              </div>
-              <div className="text-zinc-700">{i}</div>
-            </div>
-          ))}
-        </div>
-        <div className="">
-          <div className="text-2xl text-green-600 font-semibold">
             Renewable and Low Carbon Biofuels
           </div>
           <div className="font-semibold text-zinc-800 text-2xl">
@@ -158,6 +128,37 @@ const About = () => {
             </div>
           ))}
         </div>
+        <div className="">
+          <div className="text-2xl text-green-600 font-semibold">
+            Hydrogen and Derivatives
+          </div>
+          <div className="font-semibold text-zinc-800 text-2xl">
+            Hydrogen is primarily used to produce chemical products, such as
+            plastics and fertilisers. Well over 90% of this hydrogen production
+            is through natural gas, which results in significant amounts of CO2
+            emissions.
+          </div>
+          <div className="">
+            Renewable hydrogen (or Green Hydrogen) can be obtained via
+            electrolysis using renewable electricity to split water into
+            hydrogen and oxygen. It will play a key role in decarbonising
+            sectors where other alternatives might be unfeasible or more
+            expensive. It can be used to replace fossil-based hydrogen for
+            transport and industrial processes, and to start new industrial
+            products, such as green fertilisers and steel. <br />
+            We work with our clients operating within the Hydrogen space or of
+            any of its derivatives:
+          </div>
+          {hydrodata.map((i, index) => (
+            <div className="flex my-4" key={index}>
+              <div className="mr-4  flex items-center justify-center ">
+                <GiCheckMark color={"green"} />
+              </div>
+              <div className="text-zinc-700">{i}</div>
+            </div>
+          ))}
+        </div>
+
         <div className="">
           <div className="text-2xl text-green-600 font-semibold">
             Food and Pharmaceuticals

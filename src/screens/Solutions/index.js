@@ -313,7 +313,7 @@ const Solutions = () => {
         </div>
         <div
           className="p-4 flex items-start shadow-sm rounded-lg bg-white overflow-hidden"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="800"
         >
           <div className="lg:pt-4">

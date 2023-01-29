@@ -32,7 +32,7 @@ const Home = () => {
   useEffect(() => {
     const options = {
       strings: [
-        "Circular economy.",
+        "Circular Economy.",
         "Net Zero goal.",
         "Energy Transition.",
         "Sustainability.",
@@ -238,7 +238,7 @@ const Home = () => {
         </div>
         <div
           className="p-4 flex items-start shadow-sm rounded-lg bg-white overflow-hidden"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="800"
         >
           <div className="lg:pt-4">
