@@ -41,7 +41,7 @@ const Solutions = () => {
   }, []);
   return (
     <Layout>
-      <div className="w-[100vw] h-[100vh] lg:h-[80vh] pt-16 lg:pt-0 md:pt-0 flex flex-row items-center justify-center bg-gradient-to-r from-[#111214] to-[#072912]">
+      <div className="w-[100vw] h-[100vh] lg:h-[100vh] pt-16 lg:pt-0 md:pt-0 flex flex-row items-center justify-center bg-gradient-to-r from-[#111214] to-[#072912]">
         <div className="px-4 animate__animated animate__fadeInUp">
           <div
             className="text-3xl pt-4 lg:w-[70%] lg:text-center md:text-center mx-auto text-left font-bold leading-[60px] "
@@ -51,7 +51,7 @@ const Solutions = () => {
             <div className="">
               <div className="h-[150px] flex items-center lg:justify-center ">
                 <div
-                  className="text-5xl pt-[60px] lg:pt-[70px] text-white text-left font-bold leading-[60px] "
+                  className="text-5xl pt-[60px] lg:pt-[30px] text-white text-left font-bold leading-[60px] "
                   ref={element}
                 />
               </div>
@@ -187,7 +187,7 @@ const Solutions = () => {
             <div className="" key={i.id}>
               <div
                 className="p-8 flex flex-col justify-center"
-                // data-aos="fade-right"
+                // data-aos="fade-up"
                 // data-aos-duration="2000"
               >
                 <div className="">
