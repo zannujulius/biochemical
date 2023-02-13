@@ -10,13 +10,13 @@ import { extraData, renewData, foodData, hydrodata } from "../Solutions/data";
 import Typed from "typed.js";
 
 const About = () => {
-  // useEffect(() => {
-  //   window.scroll({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  //   return () => {};
-  // }, []);
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
+    return () => {};
+  }, []);
   const element = useRef(null);
   const typed = useRef(null);
   useEffect(() => {
@@ -100,8 +100,9 @@ const About = () => {
             Renewable and low carbon biofuels such as bioethanol, biodiesel,
             renewable natural gas (RNG) and sustainable aviation fuel (SAF),
             help lower carbon emissions from transportation particularly
-            hard-to-abate sectors such as long-distance flight and long-haul
-            heavy-duty trucking.
+            hard-to-abate.
+            {/* sectors such as long-distance flight and long-haul
+            heavy-duty trucking. */}
           </div>
           <div className="">The strength of these fuels also include:</div>
 
@@ -134,18 +135,18 @@ const About = () => {
           </div>
           <div className="font-semibold text-zinc-800 text-2xl">
             Hydrogen is primarily used to produce chemical products, such as
-            plastics and fertilisers. Well over 90% of this hydrogen production
-            is through natural gas, which results in significant amounts of CO2
-            emissions.
+            plastics and fertilisers.
           </div>
           <div className="">
-            Renewable hydrogen (or Green Hydrogen) can be obtained via
-            electrolysis using renewable electricity to split water into
-            hydrogen and oxygen. It will play a key role in decarbonising
-            sectors where other alternatives might be unfeasible or more
-            expensive. It can be used to replace fossil-based hydrogen for
-            transport and industrial processes, and to start new industrial
-            products, such as green fertilisers and steel. <br />
+            Well over 90% of this hydrogen production is through natural gas,
+            which results in significant amounts of CO2 emissions. Renewable
+            hydrogen (or Green Hydrogen) can be obtained via electrolysis using
+            renewable electricity to split water into hydrogen and oxygen. It
+            will play a key role in decarbonising sectors where other
+            alternatives might be unfeasible or more expensive. It can be used
+            to replace fossil-based hydrogen for transport and industrial
+            processes, and to start new industrial products, such as green
+            fertilisers and steel. <br />
             We work with our clients operating within the Hydrogen space or of
             any of its derivatives:
           </div>
@@ -165,17 +166,16 @@ const About = () => {
           </div>
           <div className="font-semibold text-zinc-800 text-2xl">
             There is a growing demand for environmentally friendly food and
-            drugs - with focus throughout the value chain. In these two
-            different but related industries, process development tends to be
-            not only lengthy, complex due to regulatory requirements, but also
-            expensive.
+            drugs - with focus throughout the value chain.
           </div>
           <div className="">
-            Combined with the need to ensure lower carbon is emitted during the
-            whole process, the incentives for a greener food and pharma industry
-            are even higher. For clients in this sector, we provide services
-            that help them meet the Quality Requirements of the authorized
-            regulatory bodies and also
+            In these two different but related industries, process development
+            tends to be not only lengthy, complex due to regulatory
+            requirements, but also expensive. Combined with the need to ensure
+            lower carbon is emitted during the whole process, the incentives for
+            a greener food and pharma industry are even higher. For clients in
+            this sector, we provide services that help them meet the Quality
+            Requirements of the authorized regulatory bodies and also
           </div>
 
           {foodData.map((i, index) => (

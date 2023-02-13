@@ -210,7 +210,7 @@ const Home = () => {
           data-aos-duration="800"
         >
           <div className="text-lg text-primary">Consulting</div>
-          <div className="text-3xl font-bold text-zinc-800 leading-[40px]">
+          <div className="text-2xl font-bold text-zinc-800 leading-[40px]">
             The Green Economy has provided us with the possibilities of green
             fuels and products
           </div>
@@ -242,7 +242,7 @@ const Home = () => {
           data-aos-duration="800"
         >
           <div className="lg:pt-4">
-            <div className="text-zinc-800 text-2xl font-semibold">
+            <div className="text-zinc-800 text-1xl font-normal">
               Our clients enjoy the following consulting services amongst
               others:
             </div>
@@ -400,7 +400,7 @@ const Home = () => {
           data-aos-duration="800"
         >
           <div className="text-lg text-primary">Project Development</div>
-          <div className="text-3xl font-bold text-zinc-800 leading-[40px]">
+          <div className="text-2xl font-bold text-zinc-800 leading-[40px]">
             We help move your projects from mere ideas to Final Investment
             Decision (FID).
           </div>
@@ -478,7 +478,7 @@ const Home = () => {
           data-aos-duration="800"
         >
           <div className="text-lg text-primary">Project Financing</div>
-          <div className="text-3xl font-bold text-zinc-800 leading-[40px]">
+          <div className="text-2xl font-bold text-zinc-800 leading-[40px]">
             We support our clients in ensuring their business meets technical,
             economical, environmental and regulatory requirements to stand a
             good chance of getting funded.
@@ -511,7 +511,7 @@ const Home = () => {
         >
           <div className="">
             {/* <div className="text-lg text-primary">Project Management</div> */}
-            <div className="text-zinc-800 text-2xl font-semibold ">
+            <div className="text-zinc-800 text-1xl font-normal ">
               We therefore provided the following services to our clients to
               help them stand a higher than average chance of Project Financing
               regardless of the size and scope of the project:
