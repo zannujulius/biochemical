@@ -17,7 +17,7 @@ const Modal = ({ closeModal }) => {
                 color: "",
               }}
             >
-              Greencrystal Engineering..
+              Greencrystal Engineering.
             </Link>
           </div>
           <div className="cursor-pointer" onClick={() => closeModal(false)}>

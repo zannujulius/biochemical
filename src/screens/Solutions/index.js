@@ -433,7 +433,7 @@ const Solutions = () => {
           data-aos-duration="800"
         >
           <div className="text-lg text-primary">Project Financing</div>
-          <div className="text-3xl font-bold text-zinc-800 leading-[40px]">
+          <div className="text-2xl font-bold text-zinc-800 leading-[40px]">
             We support our clients in ensuring their business meets technical,
             economical, environmental and regulatory requirements to stand a
             good chance of getting funded.
@@ -466,7 +466,7 @@ const Solutions = () => {
         >
           <div className="">
             {/* <div className="text-lg text-primary">Project Management</div> */}
-            <div className="text-zinc-800 text-2xl font-semibold ">
+            <div className="text-zinc-800 text-1xl font-normal ">
               We therefore provided the following services to our clients to
               help them stand a higher than average chance of Project Financing
               regardless of the size and scope of the project:
