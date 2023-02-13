@@ -287,7 +287,7 @@ const Solutions = () => {
           <div className="text-lg text-primary">Consulting</div>
           <div className="text-2xl font-bold text-zinc-800 leading-[40px]">
             The Green Economy has provided us with the possibilities of green
-            fuels and products
+            fuels and products.
           </div>
           <div className="text-1xl pt-4 font-normal text-zinc-800 md:w-[90%] py-3 leading-8 ">
             {/* <span className="text-[50px] font-bold italic">“</span> */}
